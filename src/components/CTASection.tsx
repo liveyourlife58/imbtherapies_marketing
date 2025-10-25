@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { ArrowRight, CheckCircle, Shield, Clock } from 'lucide-react';
+import { CheckCircle, Shield, Clock } from 'lucide-react';
 
 const CTASection = () => {
   const ref = useRef(null);
@@ -160,8 +160,8 @@ const CTASection = () => {
               whileTap={{ scale: 0.95 }}
               className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white transition-colors duration-200 shadow-lg"
               style={{ color: 'white' }}
-              onMouseEnter={(e) => { e.target.style.backgroundColor = 'white'; e.target.style.color = '#5A6E8C'; }}
-              onMouseLeave={(e) => { e.target.style.backgroundColor = 'transparent'; e.target.style.color = 'white'; }}
+              onMouseEnter={(e) => { (e.target as HTMLElement).style.backgroundColor = 'white'; (e.target as HTMLElement).style.color = '#5A6E8C'; }}
+              onMouseLeave={(e) => { (e.target as HTMLElement).style.backgroundColor = 'transparent'; (e.target as HTMLElement).style.color = 'white'; }}
             >
               Speak with an Expert
             </motion.button>

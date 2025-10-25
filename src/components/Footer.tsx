@@ -115,8 +115,8 @@ const Footer = () => {
                         whileHover={{ x: 5 }}
                         className="transition-colors duration-200"
                         style={{ color: 'rgba(255, 255, 255, 0.8)' }}
-                        onMouseEnter={(e) => e.target.style.color = 'white'}
-                        onMouseLeave={(e) => e.target.style.color = 'rgba(255, 255, 255, 0.8)'}
+                        onMouseEnter={(e) => (e.target as HTMLElement).style.color = 'white'}
+                        onMouseLeave={(e) => (e.target as HTMLElement).style.color = 'rgba(255, 255, 255, 0.8)'}
                       >
                         {link.name}
                       </motion.a>
@@ -196,12 +196,12 @@ const Footer = () => {
                     color: 'rgba(255, 255, 255, 0.6)' 
                   }}
                   onMouseEnter={(e) => {
-                    e.target.style.backgroundColor = '#68B04D';
-                    e.target.style.color = 'white';
+                    (e.target as HTMLElement).style.backgroundColor = '#68B04D';
+                    (e.target as HTMLElement).style.color = 'white';
                   }}
                   onMouseLeave={(e) => {
-                    e.target.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
-                    e.target.style.color = 'rgba(255, 255, 255, 0.6)';
+                    (e.target as HTMLElement).style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
+                    (e.target as HTMLElement).style.color = 'rgba(255, 255, 255, 0.6)';
                   }}
                   aria-label={social.label}
                 >

@@ -109,7 +109,7 @@ const TestimonialsSection = () => {
               <div className="relative">
                 <Quote className="w-6 h-6 text-primary/20 absolute -top-2 -left-2" />
                 <p className="text-gray-700 leading-relaxed pl-4">
-                  "{testimonial.content}"
+                  &ldquo;{testimonial.content}&rdquo;
                 </p>
               </div>
             </motion.div>
@@ -136,7 +136,7 @@ const TestimonialsSection = () => {
               </div>
             </div>
             <p className="text-lg text-gray-700">
-              "Outstanding service and life-changing results. Highly recommend to anyone serious about their digestive health."
+              &ldquo;Outstanding service and life-changing results. Highly recommend to anyone serious about their digestive health.&rdquo;
             </p>
           </div>
         </motion.div>
