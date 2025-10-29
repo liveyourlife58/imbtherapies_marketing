@@ -100,9 +100,9 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code',
-    yandex: 'your-yandex-verification-code',
-    yahoo: 'your-yahoo-verification-code',
+    google: 'domain-verified',
+    yandex: 'not-configured',
+    yahoo: 'not-configured',
   },
 };
 
@@ -242,7 +242,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <GoogleAnalytics measurementId="G-XXXXXXXXXX" />
+        <GoogleAnalytics measurementId="G-H0XBDMBPYJ" />
         <PerformanceOptimizations />
         {children}
       </body>

@@ -37,117 +37,301 @@ export default function FoodSensitivityCompleteBlogPost() {
     category: 'Vibrant Wellness Tests',
     image: '/images/food_sensitivity_complete.png',
     content: `
-      <h2>Understanding Food Sensitivities</h2>
-      <p>Food sensitivities can cause a wide range of symptoms that often go undiagnosed for years. Unlike food allergies that cause immediate, severe reactions, food sensitivities can cause delayed symptoms that make them difficult to identify. These hidden sensitivities can contribute to chronic inflammation, digestive issues, fatigue, and other health problems.</p>
+      <h2>What is the Vibrant Wellness Food Sensitivity Complete Test?</h2>
+      <p>Think of food sensitivities like having a hidden enemy in your diet - foods that seem harmless but are actually causing your body to react in ways that make you feel unwell. The Food Sensitivity Complete test is like having a detective investigate every single food you might eat to find out which ones are secretly causing your health problems.</p>
       
-      <h2>What Makes the Vibrant Wellness Food Sensitivity Complete Different?</h2>
-      <p>The Vibrant Wellness Food Sensitivity Complete test is the most comprehensive food sensitivity test available, analyzing your immune response to over 200 different foods. This extensive testing approach ensures that no potential trigger foods are missed, giving you a complete picture of your body's response to various foods.</p>
+      <p>This isn't just a simple "test a few foods" approach. The Food Sensitivity Complete test checks your body's reaction to over 200 different foods - that's more comprehensive than any other test available. It's like getting a complete health report on how your body responds to almost everything you might eat.</p>
       
-      <h3>Comprehensive Food Categories Tested:</h3>
-      <ul>
-        <li><strong>Dairy Products:</strong> Milk, cheese, yogurt, and other dairy items</li>
-        <li><strong>Grains:</strong> Wheat, rice, corn, oats, and other grains</li>
-        <li><strong>Proteins:</strong> Beef, chicken, fish, eggs, and plant proteins</li>
-        <li><strong>Vegetables:</strong> Common and uncommon vegetables</li>
-        <li><strong>Fruits:</strong> Fresh and dried fruits</li>
-        <li><strong>Nuts and Seeds:</strong> Tree nuts, peanuts, and various seeds</li>
-        <li><strong>Spices and Herbs:</strong> Common cooking spices and herbs</li>
-        <li><strong>Beverages:</strong> Coffee, tea, and other drinks</li>
-      </ul>
+      <h2>Who Should Consider This Test?</h2>
+      <p>If you're experiencing mysterious health issues that your doctor can't explain, or if you suspect certain foods might be making you feel unwell, this comprehensive test can help. Here are some common situations where the Food Sensitivity Complete test can make a difference:</p>
       
-      <h2>How the Food Sensitivity Complete Test Works</h2>
-      <p>The Vibrant Wellness Food Sensitivity Complete test uses advanced IgG antibody testing to identify delayed food sensitivities. This method is more comprehensive than traditional IgE allergy testing, which only identifies immediate allergic reactions.</p>
+      <div class="grid md:grid-cols-2 gap-6 my-8">
+        <div class="bg-blue-50 p-6 rounded-lg">
+          <h3 class="text-lg font-semibold text-blue-800 mb-4">Digestive Problems</h3>
+          <p class="text-sm text-gray-700 mb-4">If you experience these digestive issues regularly:</p>
+          <ul class="space-y-2 text-sm">
+            <li>• Bloating and gas after eating</li>
+            <li>• Stomach pain and cramping</li>
+            <li>• Diarrhea or constipation</li>
+            <li>• Nausea and vomiting</li>
+            <li>• Acid reflux and heartburn</li>
+          </ul>
+        </div>
+        
+        <div class="bg-green-50 p-6 rounded-lg">
+          <h3 class="text-lg font-semibold text-green-800 mb-4">Overall Health Issues</h3>
+          <p class="text-sm text-gray-700 mb-4">Sometimes food sensitivities show up in unexpected ways:</p>
+          <ul class="space-y-2 text-sm">
+            <li>• Fatigue and low energy</li>
+            <li>• Headaches and migraines</li>
+            <li>• Joint pain and inflammation</li>
+            <li>• Skin rashes and eczema</li>
+            <li>• Mood changes and irritability</li>
+          </ul>
+        </div>
+      </div>
       
-      <h3>Testing Process:</h3>
-      <ol>
-        <li><strong>Sample Collection:</strong> Simple blood spot collection at home</li>
-        <li><strong>Laboratory Analysis:</strong> Advanced testing for IgG antibodies to 200+ foods</li>
-        <li><strong>Result Interpretation:</strong> Detailed analysis of your immune responses</li>
-        <li><strong>Personalized Report:</strong> Comprehensive results with actionable recommendations</li>
-      </ol>
+      <div class="bg-yellow-50 p-6 rounded-lg my-8">
+        <h3 class="text-lg font-semibold text-yellow-800 mb-4">Chronic Health Conditions</h3>
+        <p class="text-sm text-gray-700 mb-4">Food sensitivities can contribute to or worsen these conditions:</p>
+        <div class="grid md:grid-cols-2 gap-4">
+          <ul class="space-y-2 text-sm">
+            <li>• Autoimmune diseases</li>
+            <li>• Chronic fatigue syndrome</li>
+            <li>• Fibromyalgia</li>
+          </ul>
+          <ul class="space-y-2 text-sm">
+            <li>• Irritable Bowel Syndrome (IBS)</li>
+            <li>• Inflammatory Bowel Disease</li>
+            <li>• Chronic inflammation</li>
+          </ul>
+        </div>
+      </div>
       
-      <h2>Understanding Your Food Sensitivity Results</h2>
-      <p>Your Vibrant Wellness Food Sensitivity Complete results will categorize foods into different levels of reactivity, helping you understand which foods may be contributing to your symptoms.</p>
+      <h2>Why is This Test Important?</h2>
+      <p>Here's something that might surprise you: <strong>Food sensitivities affect up to 20% of the population</strong>, but most people don't realize they have them because the symptoms can be delayed by hours or even days after eating.</p>
       
-      <h3>Result Categories:</h3>
-      <ul>
-        <li><strong>High Reactivity:</strong> Foods causing strong immune responses - eliminate completely</li>
-        <li><strong>Moderate Reactivity:</strong> Foods causing moderate responses - reduce consumption</li>
-        <li><strong>Low Reactivity:</strong> Foods causing mild responses - monitor and rotate</li>
-        <li><strong>No Reactivity:</strong> Foods that are safe to consume regularly</li>
-      </ul>
+      <p>Unlike food allergies that cause immediate, obvious reactions, food sensitivities are like a slow poison - they cause subtle, ongoing problems that can seriously impact your quality of life over time.</p>
       
-      <h2>Benefits of Comprehensive Food Testing</h2>
-      <p>Testing 200+ foods provides several advantages over limited food sensitivity tests:</p>
-      <ul>
-        <li><strong>Complete Picture:</strong> Identifies all potential trigger foods</li>
-        <li><strong>Hidden Sensitivities:</strong> Reveals unexpected food reactions</li>
-        <li><strong>Personalized Diet:</strong> Creates a customized elimination plan</li>
-        <li><strong>Symptom Resolution:</strong> Helps identify foods causing chronic symptoms</li>
-        <li><strong>Preventive Health:</strong> Reduces inflammation and improves overall health</li>
-      </ul>
+      <div class="grid md:grid-cols-2 gap-6 my-8">
+        <div class="bg-red-50 p-6 rounded-lg">
+          <h3 class="text-lg font-semibold text-red-800 mb-4">Immediate Health Risks</h3>
+          <ul class="space-y-2 text-sm">
+            <li>• <strong>Chronic inflammation</strong> - damages your body over time</li>
+            <li>• <strong>Digestive problems</strong> - ongoing gut issues</li>
+            <li>• <strong>Immune system overload</strong> - constant stress on your immune system</li>
+            <li>• <strong>Nutrient malabsorption</strong> - can't absorb nutrients properly</li>
+          </ul>
+        </div>
+        
+        <div class="bg-orange-50 p-6 rounded-lg">
+          <h3 class="text-lg font-semibold text-orange-800 mb-4">Long-term Health Risks</h3>
+          <ul class="space-y-2 text-sm">
+            <li>• <strong>Autoimmune diseases</strong> - increased risk from chronic inflammation</li>
+            <li>• <strong>Heart disease</strong> - inflammation affects cardiovascular health</li>
+            <li>• <strong>Diabetes</strong> - blood sugar regulation problems</li>
+            <li>• <strong>Mental health issues</strong> - brain fog, anxiety, depression</li>
+          </ul>
+        </div>
+      </div>
       
-      <h2>Common Symptoms of Food Sensitivities</h2>
-      <p>Food sensitivities can manifest in many different ways, making them challenging to identify without proper testing:</p>
+      <p>Finding and eliminating your food sensitivities is like removing the root cause of many health problems. It's not just about feeling better today - it's about preventing serious health issues in the future.</p>
       
-      <h3>Digestive Symptoms:</h3>
-      <ul>
-        <li>Bloating and gas</li>
-        <li>Abdominal pain and cramping</li>
-        <li>Diarrhea or constipation</li>
-        <li>Nausea and vomiting</li>
-        <li>Acid reflux and heartburn</li>
-      </ul>
+      <h2>What Makes This Test Special?</h2>
+      <p>The Food Sensitivity Complete test isn't your average food test. Here's what makes it different:</p>
       
-      <h3>Systemic Symptoms:</h3>
-      <ul>
-        <li>Fatigue and low energy</li>
-        <li>Headaches and migraines</li>
-        <li>Joint pain and inflammation</li>
-        <li>Skin rashes and eczema</li>
-        <li>Mood changes and irritability</li>
-      </ul>
+      <div class="grid md:grid-cols-2 gap-6 my-8">
+        <div class="bg-purple-50 p-6 rounded-lg">
+          <h3 class="text-lg font-semibold text-purple-800 mb-4">Comprehensive Testing</h3>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-start">
+              <span class="text-purple-600 mr-2">✓</span>
+              <span><strong>Tests 200+ foods</strong> - more comprehensive than any other test</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-purple-600 mr-2">✓</span>
+              <span><strong>IgG antibody testing</strong> - detects delayed food sensitivities</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-purple-600 mr-2">✓</span>
+              <span><strong>All food categories</strong> - dairy, grains, proteins, vegetables, fruits, nuts, spices</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="bg-green-50 p-6 rounded-lg">
+          <h3 class="text-lg font-semibold text-green-800 mb-4">Easy & Accurate</h3>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-start">
+              <span class="text-green-600 mr-2">✓</span>
+              <span><strong>Simple blood spot test</strong> - can be done at home</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-600 mr-2">✓</span>
+              <span><strong>Highly accurate</strong> - advanced laboratory analysis</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-green-600 mr-2">✓</span>
+              <span><strong>Personalized results</strong> - specific recommendations for your situation</span>
+            </li>
+          </ul>
+        </div>
+      </div>
       
-      <h2>Implementing Your Food Sensitivity Results</h2>
-      <p>Once you receive your Vibrant Wellness Food Sensitivity Complete results, our team will help you create an effective elimination and reintroduction plan:</p>
+      <div class="bg-blue-50 p-6 rounded-lg my-8">
+        <h3 class="text-lg font-semibold text-blue-800 mb-4">What Foods Are Tested?</h3>
+        <p class="text-sm text-gray-700 mb-4">The test covers all major food categories:</p>
+        <div class="grid md:grid-cols-2 gap-4">
+          <ul class="space-y-2 text-sm">
+            <li>• <strong>Dairy Products</strong> - milk, cheese, yogurt, butter</li>
+            <li>• <strong>Grains</strong> - wheat, rice, corn, oats, quinoa</li>
+            <li>• <strong>Proteins</strong> - beef, chicken, fish, eggs, beans</li>
+            <li>• <strong>Vegetables</strong> - common and uncommon varieties</li>
+          </ul>
+          <ul class="space-y-2 text-sm">
+            <li>• <strong>Fruits</strong> - fresh and dried fruits</li>
+            <li>• <strong>Nuts & Seeds</strong> - tree nuts, peanuts, various seeds</li>
+            <li>• <strong>Spices & Herbs</strong> - common cooking ingredients</li>
+            <li>• <strong>Beverages</strong> - coffee, tea, and other drinks</li>
+          </ul>
+        </div>
+      </div>
       
-      <h3>Phase 1: Elimination (4-6 weeks)</h3>
-      <ul>
-        <li>Remove all high and moderate reactivity foods</li>
-        <li>Focus on low reactivity and safe foods</li>
-        <li>Monitor symptoms for improvement</li>
-        <li>Support gut health with targeted supplements</li>
-      </ul>
+      <h2>How the Test Works</h2>
+      <p>Getting tested is simple and can be done in the comfort of your own home:</p>
       
-      <h3>Phase 2: Reintroduction (6-8 weeks)</h3>
-      <ul>
-        <li>Gradually reintroduce foods one at a time</li>
-        <li>Monitor for symptom return</li>
-        <li>Identify which foods can be tolerated</li>
-        <li>Create long-term dietary plan</li>
-      </ul>
+      <div class="bg-gray-50 p-6 rounded-lg my-8">
+        <h3 class="text-lg font-semibold text-gray-800 mb-4">Testing Process</h3>
+        <div class="grid md:grid-cols-4 gap-4">
+          <div class="text-center">
+            <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+              <span class="text-blue-600 font-bold">1</span>
+            </div>
+            <h4 class="font-semibold text-sm mb-2">Order Test</h4>
+            <p class="text-xs text-gray-600">Order your test kit online</p>
+          </div>
+          <div class="text-center">
+            <div class="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+              <span class="text-green-600 font-bold">2</span>
+            </div>
+            <h4 class="font-semibold text-sm mb-2">Collect Sample</h4>
+            <p class="text-xs text-gray-600">Simple blood spot collection at home</p>
+          </div>
+          <div class="text-center">
+            <div class="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+              <span class="text-purple-600 font-bold">3</span>
+            </div>
+            <h4 class="font-semibold text-sm mb-2">Lab Analysis</h4>
+            <p class="text-xs text-gray-600">Advanced testing for 200+ foods</p>
+          </div>
+          <div class="text-center">
+            <div class="bg-orange-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+              <span class="text-orange-600 font-bold">4</span>
+            </div>
+            <h4 class="font-semibold text-sm mb-2">Get Results</h4>
+            <p class="text-xs text-gray-600">Detailed report with recommendations</p>
+          </div>
+        </div>
+      </div>
       
-      <h2>Supporting Your Food Sensitivity Journey</h2>
-      <p>Managing food sensitivities requires more than just dietary changes. Our comprehensive approach includes:</p>
-      <ul>
-        <li><strong>Personalized Supplement Protocol:</strong> Fullscript supplements to support gut health</li>
-        <li><strong>Digestive Support:</strong> Enzymes and probiotics for better digestion</li>
-        <li><strong>Immune Support:</strong> Nutrients to reduce inflammation</li>
-        <li><strong>Ongoing Monitoring:</strong> Regular follow-up testing to track progress</li>
-      </ul>
+      <h2>Understanding Your Results</h2>
+      <p>Your test results will show you exactly how your body reacts to each food, organized into clear categories:</p>
       
-      <h2>Why Choose Vibrant Wellness Food Sensitivity Complete?</h2>
-      <p>The Vibrant Wellness Food Sensitivity Complete test offers the most comprehensive food sensitivity analysis available:</p>
-      <ul>
-        <li><strong>Extensive Testing:</strong> 200+ foods for complete coverage</li>
-        <li><strong>Advanced Technology:</strong> Cutting-edge IgG antibody testing</li>
-        <li><strong>Accurate Results:</strong> Reliable and reproducible testing methods</li>
-        <li><strong>Professional Support:</strong> Expert guidance throughout your journey</li>
-        <li><strong>Actionable Results:</strong> Clear recommendations for dietary changes</li>
-      </ul>
+      <div class="grid md:grid-cols-2 gap-6 my-8">
+        <div class="bg-red-50 p-6 rounded-lg">
+          <h3 class="text-lg font-semibold text-red-800 mb-4">High Reactivity Foods</h3>
+          <p class="text-sm text-gray-700 mb-4">These foods cause strong immune responses:</p>
+          <ul class="space-y-2 text-sm">
+            <li>• <strong>Eliminate completely</strong> - avoid these foods entirely</li>
+            <li>• <strong>Strong symptoms</strong> - likely causing your health problems</li>
+            <li>• <strong>Priority foods</strong> - focus on these first</li>
+          </ul>
+        </div>
+        
+        <div class="bg-yellow-50 p-6 rounded-lg">
+          <h3 class="text-lg font-semibold text-yellow-800 mb-4">Moderate Reactivity Foods</h3>
+          <p class="text-sm text-gray-700 mb-4">These foods cause moderate responses:</p>
+          <ul class="space-y-2 text-sm">
+            <li>• <strong>Reduce consumption</strong> - eat less frequently</li>
+            <li>• <strong>Monitor symptoms</strong> - watch for reactions</li>
+            <li>• <strong>Rotate foods</strong> - don't eat daily</li>
+          </ul>
+        </div>
+      </div>
       
-      <h2>Ready to Discover Your Food Sensitivities?</h2>
-      <p>If you're experiencing unexplained symptoms or want to optimize your health through personalized nutrition, the Vibrant Wellness Food Sensitivity Complete test can provide the answers you need. <a href="https://imbt.wellproz.com/patient/product/33729" target="_blank" rel="noopener noreferrer">Order your Food Sensitivity Complete test today</a> and take the first step toward identifying hidden food sensitivities that may be affecting your health.</p>
+      <div class="grid md:grid-cols-2 gap-6 my-8">
+        <div class="bg-green-50 p-6 rounded-lg">
+          <h3 class="text-lg font-semibold text-green-800 mb-4">Low Reactivity Foods</h3>
+          <p class="text-sm text-gray-700 mb-4">These foods cause mild responses:</p>
+          <ul class="space-y-2 text-sm">
+            <li>• <strong>Monitor and rotate</strong> - eat occasionally</li>
+            <li>• <strong>Watch for patterns</strong> - note any symptoms</li>
+            <li>• <strong>Safe in moderation</strong> - generally okay to eat</li>
+          </ul>
+        </div>
+        
+        <div class="bg-blue-50 p-6 rounded-lg">
+          <h3 class="text-lg font-semibold text-blue-800 mb-4">No Reactivity Foods</h3>
+          <p class="text-sm text-gray-700 mb-4">These foods are safe for you:</p>
+          <ul class="space-y-2 text-sm">
+            <li>• <strong>Eat regularly</strong> - these are your safe foods</li>
+            <li>• <strong>No restrictions</strong> - enjoy without worry</li>
+            <li>• <strong>Build your diet</strong> - focus on these foods</li>
+          </ul>
+        </div>
+      </div>
+      
+      <h2>What Happens After You Get Your Results?</h2>
+      <p>Once you receive your Food Sensitivity Complete results, you'll have a clear roadmap to better health. Our team at IMBTherapies will help you create a personalized plan to manage your food sensitivities effectively.</p>
+      
+      <div class="bg-gray-50 p-6 rounded-lg my-8">
+        <h3 class="text-lg font-semibold text-gray-800 mb-4">Your Personalized Action Plan</h3>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <h4 class="font-semibold text-sm mb-3 text-blue-800">Phase 1: Elimination (4-6 weeks)</h4>
+            <ul class="space-y-2 text-sm">
+              <li>• <strong>Remove high reactivity foods</strong> - eliminate completely</li>
+              <li>• <strong>Reduce moderate reactivity foods</strong> - eat less frequently</li>
+              <li>• <strong>Focus on safe foods</strong> - build your diet around these</li>
+              <li>• <strong>Monitor symptoms</strong> - track improvements</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold text-sm mb-3 text-green-800">Phase 2: Reintroduction (6-8 weeks)</h4>
+            <ul class="space-y-2 text-sm">
+              <li>• <strong>Add foods back slowly</strong> - one at a time</li>
+              <li>• <strong>Watch for reactions</strong> - note any symptoms</li>
+              <li>• <strong>Identify tolerances</strong> - see what you can handle</li>
+              <li>• <strong>Create long-term plan</strong> - sustainable diet</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <h2>Supporting Your Health Journey</h2>
+      <p>Managing food sensitivities is about more than just changing your diet. Our comprehensive approach includes:</p>
+      
+      <div class="grid md:grid-cols-2 gap-6 my-8">
+        <div class="bg-purple-50 p-6 rounded-lg">
+          <h3 class="text-lg font-semibold text-purple-800 mb-4">Personalized Supplements</h3>
+          <ul class="space-y-2 text-sm">
+            <li>• <strong>Fullscript supplements</strong> - professional-grade quality</li>
+            <li>• <strong>Digestive enzymes</strong> - help break down food</li>
+            <li>• <strong>Probiotics</strong> - support gut health</li>
+            <li>• <strong>Anti-inflammatory nutrients</strong> - reduce inflammation</li>
+          </ul>
+        </div>
+        
+        <div class="bg-orange-50 p-6 rounded-lg">
+          <h3 class="text-lg font-semibold text-orange-800 mb-4">Ongoing Support</h3>
+          <ul class="space-y-2 text-sm">
+            <li>• <strong>Regular follow-up</strong> - track your progress</li>
+            <li>• <strong>Diet adjustments</strong> - modify as needed</li>
+            <li>• <strong>Supplement optimization</strong> - fine-tune your protocol</li>
+            <li>• <strong>Lifestyle guidance</strong> - holistic approach</li>
+          </ul>
+        </div>
+      </div>
+      
+      <h2>About Vibrant Wellness</h2>
+      <p>Vibrant Wellness is a trusted lab company that specializes in advanced health testing. They're based in California and are certified by the highest standards in the industry. Their mission is simple: help people understand what's really going on in their bodies so they can get better.</p>
+      
+      <p>Instead of guessing what might be wrong with your health, Vibrant Wellness believes in testing first. They use the latest technology to give you real answers about your food sensitivities, so you can make informed decisions about your diet and wellness.</p>
+      
+      <h2>Ready to Find Out What's Really Going On?</h2>
+      <p>If you're tired of feeling unwell and suspect certain foods might be the culprit, the Food Sensitivity Complete test can give you real answers. It's like having a roadmap to better health - you'll finally know exactly which foods are helping or hurting your body.</p>
+      
+      <p><a href="https://imbt.wellproz.com/patient/product/33729" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">Order Your Food Sensitivity Complete Test Today</a></p>
+      
+      <p>Have questions? We're here to help! Contact us to learn more about how the Food Sensitivity Complete test can benefit your health journey.</p>
+      
+      <div class="bg-gray-50 p-6 rounded-lg mt-8">
+        <h3 class="text-lg font-semibold mb-4">Need Help or Have Questions?</h3>
+        <p class="mb-2"><strong>Phone:</strong> 1 (866) 364-0963</p>
+        <p class="mb-2"><strong>Email:</strong> support@vibrant-wellness.com</p>
+        <p class="mb-2"><strong>Website:</strong> www.vibrant-wellness.com</p>
+        <p class="text-sm text-gray-600">1360 Bayport Ave. Ste. B, San Carlos, CA 94070</p>
+      </div>
     `
   };
 

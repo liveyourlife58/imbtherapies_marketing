@@ -13,60 +13,274 @@ const blogPosts = {
     excerpt: 'Everything you need to know about the Vibrant Wellness Gut Zoomer test, including what it tests, how to prepare, and understanding your results.',
     content: `
       <h2>What is the Vibrant Wellness Gut Zoomer Test?</h2>
-      <p>The Vibrant Wellness Gut Zoomer is a comprehensive test that analyzes your gut microbiome, digestive function, and intestinal health markers. This advanced diagnostic tool provides detailed insights into your digestive health, helping identify potential issues that may be affecting your overall wellness.</p>
+      <p>Think of your gut as a complex ecosystem with trillions of tiny organisms living inside it. The Gut Zoomer test is like having a detailed map of this ecosystem - it shows you exactly what's living in your gut and how it might be affecting your health.</p>
       
-      <h2>What Does the Gut Zoomer Test For?</h2>
-      <p>The Vibrant Wellness Gut Zoomer test examines several key areas:</p>
+      <p>This isn't just any gut test. It's the most comprehensive one available, checking for hundreds of different bacteria, viruses, parasites, and other microorganisms that could be causing your health issues. It's like having a detective investigate your gut to find clues about why you might be feeling unwell.</p>
+      
+      <h2>Who Should Consider This Test?</h2>
+      <p>If you're dealing with ongoing health issues that your doctor can't explain, or if you have digestive problems that won't go away, this test might be exactly what you need. Here are some common situations where the Gut Zoomer can help:</p>
+      
+      <div class="grid md:grid-cols-2 gap-6 my-8">
+        <div class="bg-blue-50 p-6 rounded-lg">
+          <h3 class="text-lg font-semibold text-blue-800 mb-4">Digestive Problems</h3>
+          <p class="text-sm text-gray-700 mb-4">If you're experiencing any of these digestive issues regularly:</p>
+          <ul class="space-y-2 text-sm">
+            <li>• Constant bloating, gas, or stomach pain</li>
+            <li>• Diarrhea or constipation that won't go away</li>
+            <li>• Food sensitivities or allergies</li>
+            <li>• Heartburn or acid reflux</li>
+            <li>• Feeling like food just sits in your stomach</li>
+          </ul>
+        </div>
+        
+        <div class="bg-green-50 p-6 rounded-lg">
+          <h3 class="text-lg font-semibold text-green-800 mb-4">Overall Health Issues</h3>
+          <p class="text-sm text-gray-700 mb-4">Sometimes gut problems show up in unexpected ways:</p>
+          <ul class="space-y-2 text-sm">
+            <li>• Feeling tired all the time, even after sleeping</li>
+            <li>• Skin problems like eczema or rashes</li>
+            <li>• Mood swings or feeling anxious or depressed</li>
+            <li>• Getting sick frequently</li>
+            <li>• Joint pain or inflammation</li>
+            <li>• Weight changes you can't explain</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="bg-yellow-50 p-6 rounded-lg my-8">
+        <h3 class="text-lg font-semibold text-yellow-800 mb-4">Specific Conditions</h3>
+        <p class="text-sm text-gray-700 mb-4">If you've been diagnosed with any of these conditions, the Gut Zoomer can help identify underlying gut issues:</p>
+        <div class="grid md:grid-cols-2 gap-4">
+          <ul class="space-y-2 text-sm">
+            <li>• Irritable Bowel Syndrome (IBS)</li>
+            <li>• Inflammatory Bowel Disease (Crohn's or Colitis)</li>
+            <li>• Celiac disease or gluten sensitivity</li>
+          </ul>
+          <ul class="space-y-2 text-sm">
+            <li>• Autoimmune conditions</li>
+            <li>• Diabetes or metabolic issues</li>
+            <li>• Chronic fatigue syndrome</li>
+          </ul>
+        </div>
+      </div>
+      
+      <h2>Why Your Gut Health Matters</h2>
+      <p>Here's something that might surprise you: <strong>70% of your immune system lives in your gut.</strong> That means if your gut isn't healthy, your whole body can suffer.</p>
+      
+      <p>Think of your gut like the foundation of a house. If the foundation is cracked or unstable, everything built on top of it will have problems too. Your gut health affects everything from your energy levels to your mood to how well you fight off infections.</p>
+      
+      <p>The Gut Zoomer test helps you understand what's really happening in your gut so you can fix the root cause of your health problems, not just treat the symptoms.</p>
+      
+      <h2>What Makes This Test Special?</h2>
+      <p>The Gut Zoomer isn't your average gut test. Here's what makes it different:</p>
+      
+      <div class="grid md:grid-cols-2 gap-6 my-8">
+        <div class="bg-purple-50 p-6 rounded-lg">
+          <h3 class="text-lg font-semibold text-purple-800 mb-4">Comprehensive Testing</h3>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-start">
+              <span class="text-purple-600 mr-2">✓</span>
+              <span><strong>Most comprehensive test available</strong> - checks over 170 different types of bacteria</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-purple-600 mr-2">✓</span>
+              <span><strong>Finds harmful organisms</strong> - detects 67 different types of bacteria, viruses, and parasites that can make you sick</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-purple-600 mr-2">✓</span>
+              <span><strong>Checks your digestion</strong> - measures how well your body breaks down food and absorbs nutrients</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="bg-orange-50 p-6 rounded-lg">
+          <h3 class="text-lg font-semibold text-orange-800 mb-4">Easy & Accurate</h3>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-start">
+              <span class="text-orange-600 mr-2">✓</span>
+              <span><strong>Easy to do at home</strong> - no need to go to a lab, just follow simple instructions</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-orange-600 mr-2">✓</span>
+              <span><strong>Highly accurate</strong> - uses advanced technology that's been tested and proven to work</span>
+            </li>
+            <li class="flex items-start">
+              <span class="text-orange-600 mr-2">✓</span>
+              <span><strong>Trusted by doctors</strong> - used by healthcare providers worldwide</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="bg-red-50 p-6 rounded-lg my-8">
+        <h3 class="text-lg font-semibold text-red-800 mb-4">Health Insights</h3>
+        <p class="text-sm text-gray-700 mb-4">The test also looks for important health markers:</p>
+        <div class="grid md:grid-cols-2 gap-4">
+          <ul class="space-y-2 text-sm">
+            <li>• <strong>Inflammation levels</strong> - identifies signs of gut irritation</li>
+            <li>• <strong>Immune function</strong> - checks how well your gut supports your immune system</li>
+          </ul>
+          <ul class="space-y-2 text-sm">
+            <li>• <strong>Nutrient absorption</strong> - sees if you're getting the nutrients you need</li>
+            <li>• <strong>Gut barrier function</strong> - checks if your gut lining is working properly</li>
+          </ul>
+        </div>
+      </div>
+      
+      <h2>About Vibrant Wellness</h2>
+      <p>Vibrant Wellness is a trusted lab company that specializes in advanced health testing. They're based in California and are certified by the highest standards in the industry. Their mission is simple: help people understand what's really going on in their bodies so they can get better.</p>
+      
+      <p>Instead of guessing what might be wrong with your health, Vibrant Wellness believes in testing first. They use the latest technology to give you real answers about your gut health, so you can make informed decisions about your wellness.</p>
+      
+      <h2>How to Prepare for Your Test</h2>
+      <p>Getting ready for your Gut Zoomer test is easy, but there are a few things you need to know to make sure you get accurate results:</p>
+      
+      <div class="grid md:grid-cols-2 gap-6 my-8">
+        <div class="bg-blue-50 p-6 rounded-lg">
+          <h3 class="text-lg font-semibold text-blue-800 mb-4">Important Wait Times</h3>
+          <p class="text-sm text-gray-700 mb-4">You don't need to fast, but avoid these things before testing:</p>
+          <ul class="space-y-2 text-sm">
+            <li><strong>After antibiotics:</strong> Wait 2-4 weeks (most important!)</li>
+            <li><strong>After a colonoscopy:</strong> Wait 2 weeks</li>
+            <li><strong>After heartburn medication:</strong> Wait 5-14 days</li>
+            <li><strong>After digestive supplements:</strong> Wait 2-3 days</li>
+          </ul>
+        </div>
+        
+        <div class="bg-green-50 p-6 rounded-lg">
+          <h3 class="text-lg font-semibold text-green-800 mb-4">Short Wait Times</h3>
+          <p class="text-sm text-gray-700 mb-4">These only require a short wait:</p>
+          <ul class="space-y-2 text-sm">
+            <li><strong>After using suppositories:</strong> Wait 2-3 days</li>
+            <li><strong>After aspirin or anti-inflammatory drugs:</strong> Wait 2 days</li>
+            <li><strong>After antacids:</strong> Wait 2-3 days</li>
+            <li><strong>After herbal antimicrobials:</strong> Wait 2-4 weeks</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="bg-gray-50 p-6 rounded-lg my-8">
+        <h3 class="text-lg font-semibold text-gray-800 mb-4">How the Test Works</h3>
+        <div class="grid md:grid-cols-3 gap-4">
+          <div class="text-center">
+            <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+              <span class="text-blue-600 font-bold">1</span>
+            </div>
+            <h4 class="font-semibold text-sm mb-2">Collect Sample</h4>
+            <p class="text-xs text-gray-600">Use the kit we send you to collect a small stool sample at home. It's completely private and easy.</p>
+          </div>
+          <div class="text-center">
+            <div class="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+              <span class="text-green-600 font-bold">2</span>
+            </div>
+            <h4 class="font-semibold text-sm mb-2">Mail to Lab</h4>
+            <p class="text-xs text-gray-600">Send your sample back to the lab using the prepaid shipping label included in your kit.</p>
+          </div>
+          <div class="text-center">
+            <div class="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+              <span class="text-purple-600 font-bold">3</span>
+            </div>
+            <h4 class="font-semibold text-sm mb-2">Get Results</h4>
+            <p class="text-xs text-gray-600">In about a week, you'll receive detailed results explaining exactly what's happening in your gut.</p>
+          </div>
+        </div>
+      </div>
+      
+      <h2>What Does the Test Actually Check?</h2>
+      <p>The Gut Zoomer is incredibly thorough - it's like having a complete health checkup for your gut. Here's what it looks for:</p>
+      
+      <div class="grid md:grid-cols-2 gap-6 my-8">
+        <div class="bg-green-50 p-6 rounded-lg">
+          <h3 class="text-lg font-semibold text-green-800 mb-4">Good Bacteria (The Helpers)</h3>
+          <p class="text-sm text-gray-700 mb-4">Your gut needs certain types of bacteria to work properly. The test checks for over 170 different types of beneficial bacteria, including:</p>
+          <ul class="space-y-2 text-sm">
+            <li>• <strong>Lactobacillus</strong> - helps digest dairy and supports immune function</li>
+            <li>• <strong>Bifidobacterium</strong> - helps break down fiber and produce vitamins</li>
+            <li>• <strong>Faecalibacterium</strong> - produces anti-inflammatory compounds</li>
+            <li>• <strong>Roseburia</strong> - helps maintain gut barrier function</li>
+          </ul>
+        </div>
+        
+        <div class="bg-red-50 p-6 rounded-lg">
+          <h3 class="text-lg font-semibold text-red-800 mb-4">Bad Bacteria (The Troublemakers)</h3>
+          <p class="text-sm text-gray-700 mb-4">The test also looks for harmful bacteria that can make you sick:</p>
+          <ul class="space-y-2 text-sm">
+            <li>• <strong>E. coli</strong> - can cause severe diarrhea and stomach pain</li>
+            <li>• <strong>Salmonella</strong> - often causes food poisoning</li>
+            <li>• <strong>Helicobacter pylori</strong> - can cause stomach ulcers</li>
+            <li>• <strong>Clostridium difficile</strong> - can cause serious digestive problems</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-6 my-8">
+        <div class="bg-yellow-50 p-6 rounded-lg">
+          <h3 class="text-lg font-semibold text-yellow-800 mb-4">Parasites (The Unwanted Guests)</h3>
+          <p class="text-sm text-gray-700 mb-4">Sometimes tiny parasites can live in your gut and cause problems:</p>
+          <ul class="space-y-2 text-sm">
+            <li>• <strong>Giardia</strong> - causes diarrhea and stomach cramps</li>
+            <li>• <strong>Cryptosporidium</strong> - can cause severe diarrhea</li>
+            <li>• <strong>Blastocystis</strong> - may cause digestive issues</li>
+            <li>• <strong>Various worms</strong> - can cause a range of symptoms</li>
+          </ul>
+        </div>
+        
+        <div class="bg-purple-50 p-6 rounded-lg">
+          <h3 class="text-lg font-semibold text-purple-800 mb-4">Fungi & Viruses</h3>
+          <p class="text-sm text-gray-700 mb-4">The test also checks for:</p>
+          <ul class="space-y-2 text-sm">
+            <li>• <strong>Candida</strong> - yeast overgrowth can cause bloating and fatigue</li>
+            <li>• <strong>Norovirus</strong> - the "stomach flu" virus</li>
+            <li>• <strong>Rotavirus</strong> - common cause of diarrhea in children</li>
+            <li>• <strong>Other harmful organisms</strong> that can affect gut health</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="bg-blue-50 p-6 rounded-lg my-8">
+        <h3 class="text-lg font-semibold text-blue-800 mb-4">How Well Your Digestion Works</h3>
+        <p class="text-sm text-gray-700 mb-4">Beyond just checking what's living in your gut, the test also measures important health markers:</p>
+        <div class="grid md:grid-cols-2 gap-4">
+          <ul class="space-y-2 text-sm">
+            <li>• <strong>Food digestion</strong> - checks for undigested food particles</li>
+            <li>• <strong>Inflammation levels</strong> - looks for signs of gut irritation</li>
+            <li>• <strong>Nutrient absorption</strong> - sees if you're getting vitamins and minerals</li>
+          </ul>
+          <ul class="space-y-2 text-sm">
+            <li>• <strong>Gut barrier function</strong> - checks if your gut lining is working properly</li>
+            <li>• <strong>Antibiotic resistance</strong> - sees if harmful bacteria resist treatment</li>
+            <li>• <strong>Probiotic recommendations</strong> - suggests specific supplements for your situation</li>
+          </ul>
+        </div>
+      </div>
+      
+      <h2>What Happens After You Get Your Results?</h2>
+      <p>Once you receive your Gut Zoomer results, you'll have a clear picture of what's happening in your gut. The report will show you:</p>
+      
       <ul>
-        <li><strong>Microbiome Analysis:</strong> Evaluates the diversity and balance of beneficial and harmful bacteria in your gut</li>
-        <li><strong>Digestive Enzymes:</strong> Measures your body's ability to break down proteins, fats, and carbohydrates</li>
-        <li><strong>Inflammation Markers:</strong> Identifies signs of intestinal inflammation that may indicate underlying health issues</li>
-        <li><strong>Intestinal Permeability:</strong> Assesses the integrity of your gut barrier function</li>
-        <li><strong>Immune Function:</strong> Evaluates how your gut health affects your immune system</li>
+        <li><strong>What bacteria are present</strong> - both good and bad</li>
+        <li><strong>Any harmful organisms</strong> that might be causing your symptoms</li>
+        <li><strong>How well your digestion is working</strong></li>
+        <li><strong>Signs of inflammation</strong> in your gut</li>
+        <li><strong>Specific recommendations</strong> for improving your gut health</li>
       </ul>
       
-      <h2>How to Prepare for Your Gut Zoomer Test</h2>
-      <p>Proper preparation ensures accurate results from your Vibrant Wellness Gut Zoomer test:</p>
-      <ol>
-        <li><strong>Stop Probiotics:</strong> Discontinue probiotic supplements 48 hours before testing</li>
-        <li><strong>Avoid Antibiotics:</strong> Wait at least 4 weeks after completing antibiotic treatment</li>
-        <li><strong>Maintain Normal Diet:</strong> Continue your regular eating habits for accurate baseline results</li>
-        <li><strong>Stay Hydrated:</strong> Drink plenty of water in the days leading up to your test</li>
-        <li><strong>Follow Instructions:</strong> Carefully read and follow the test kit instructions provided</li>
-      </ol>
+      <p>Our team at IMBTherapies will help you understand your results and create a personalized plan to improve your gut health. This might include dietary changes, specific supplements, or other treatments based on what the test reveals.</p>
       
-      <h2>Understanding Your Gut Zoomer Results</h2>
-      <p>Your Vibrant Wellness Gut Zoomer results will include:</p>
-      <ul>
-        <li><strong>Detailed Microbiome Report:</strong> Comprehensive analysis of your gut bacteria</li>
-        <li><strong>Digestive Function Assessment:</strong> Evaluation of your digestive enzyme levels</li>
-        <li><strong>Inflammation Analysis:</strong> Identification of inflammatory markers</li>
-        <li><strong>Personalized Recommendations:</strong> Customized dietary and lifestyle suggestions</li>
-        <li><strong>Supplement Protocol:</strong> Targeted Fullscript supplement recommendations</li>
-      </ul>
+      <h2>Ready to Find Out What's Really Going On?</h2>
+      <p>If you're tired of guessing what might be wrong with your health, the Gut Zoomer test can give you real answers. It's like having a roadmap to better health - you'll finally know exactly what's happening in your gut and what you need to do to fix it.</p>
       
-      <h2>Next Steps After Your Gut Zoomer Test</h2>
-      <p>Once you receive your Vibrant Wellness Gut Zoomer results, our team will help you:</p>
-      <ol>
-        <li><strong>Review Results:</strong> Schedule a consultation to discuss your findings</li>
-        <li><strong>Create Action Plan:</strong> Develop a personalized approach to improve your gut health</li>
-        <li><strong>Implement Changes:</strong> Start with dietary modifications and lifestyle adjustments</li>
-        <li><strong>Add Supplements:</strong> Begin targeted Fullscript supplement protocol</li>
-        <li><strong>Monitor Progress:</strong> Track improvements and adjust your plan as needed</li>
-      </ol>
+      <p><a href="https://imbt.wellproz.com/patient/product/33407" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">Order Your Gut Zoomer Test Kit Today</a></p>
       
-      <h2>Why Choose Vibrant Wellness Gut Zoomer?</h2>
-      <p>The Vibrant Wellness Gut Zoomer test offers several advantages:</p>
-      <ul>
-        <li><strong>Comprehensive Analysis:</strong> Most thorough gut health assessment available</li>
-        <li><strong>Advanced Technology:</strong> Cutting-edge testing methods for accurate results</li>
-        <li><strong>Personalized Insights:</strong> Customized recommendations based on your unique results</li>
-        <li><strong>Professional Support:</strong> Expert guidance throughout your health journey</li>
-        <li><strong>Proven Results:</strong> Trusted by healthcare providers worldwide</li>
-      </ul>
+      <p>Have questions? We're here to help! Contact us to learn more about how the Gut Zoomer test can benefit your health journey.</p>
       
-      <h2>Ready to Get Started?</h2>
-      <p>If you're ready to take control of your digestive health with the Vibrant Wellness Gut Zoomer test, <a href="https://imbt.wellproz.com/patient/product/33407" target="_blank" rel="noopener noreferrer">order your test kit today</a>. Our team is here to support you every step of the way.</p>
+      <div class="bg-gray-50 p-6 rounded-lg mt-8">
+        <h3 class="text-lg font-semibold mb-4">Need Help or Have Questions?</h3>
+        <p class="mb-2"><strong>Phone:</strong> 1 (866) 364-0963</p>
+        <p class="mb-2"><strong>Email:</strong> support@vibrant-wellness.com</p>
+        <p class="mb-2"><strong>Website:</strong> www.vibrant-wellness.com</p>
+        <p class="text-sm text-gray-600">1360 Bayport Ave. Ste. B, San Carlos, CA 94070</p>
+      </div>
     `,
     author: 'IMB Therapies Team',
     date: '2024-01-15',
