@@ -24,9 +24,9 @@ export async function GET(
         'User-Agent': request.headers.get('user-agent') || '',
         'Accept': request.headers.get('accept') || '*/*',
         'Accept-Language': request.headers.get('accept-language') || '',
-        'Accept-Encoding': request.headers.get('accept-encoding') || '',
         'Cache-Control': request.headers.get('cache-control') || '',
         'Referer': request.headers.get('referer') || '',
+        // Don't forward Accept-Encoding to avoid compression issues
       },
     });
 
@@ -39,11 +39,10 @@ export async function GET(
       statusText: response.statusText,
     });
 
-    // Copy important headers
+    // Copy important headers (excluding content-encoding to avoid issues)
     const headersToForward = [
       'content-type',
       'content-length',
-      'content-encoding',
       'cache-control',
       'expires',
       'last-modified',
@@ -93,6 +92,7 @@ export async function POST(
         'User-Agent': request.headers.get('user-agent') || '',
         'Accept': request.headers.get('accept') || '*/*',
         'Authorization': request.headers.get('authorization') || '',
+        // Don't forward Accept-Encoding to avoid compression issues
       },
       body: body,
     });
@@ -103,11 +103,10 @@ export async function POST(
       statusText: response.statusText,
     });
 
-    // Copy headers
+    // Copy headers (excluding content-encoding to avoid issues)
     const headersToForward = [
       'content-type',
       'content-length',
-      'content-encoding',
       'cache-control',
       'expires',
       'last-modified',
