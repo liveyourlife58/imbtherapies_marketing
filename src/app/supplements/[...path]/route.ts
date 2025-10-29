@@ -4,11 +4,12 @@ const TARGET_URL = 'https://us.fullscript.com';
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { path: string[] } }
+  { params }: { params: Promise<{ path: string[] }> }
 ) {
   try {
     // Reconstruct the path
-    const path = params.path.join('/');
+    const resolvedParams = await params;
+    const path = resolvedParams.path.join('/');
     const targetUrl = `${TARGET_URL}/${path}`;
     
     // Get query parameters
@@ -70,10 +71,11 @@ export async function GET(
 
 export async function POST(
   request: NextRequest,
-  { params }: { params: { path: string[] } }
+  { params }: { params: Promise<{ path: string[] }> }
 ) {
   try {
-    const path = params.path.join('/');
+    const resolvedParams = await params;
+    const path = resolvedParams.path.join('/');
     const targetUrl = `${TARGET_URL}/${path}`;
     
     const searchParams = request.nextUrl.searchParams;
@@ -126,7 +128,7 @@ export async function POST(
   }
 }
 
-export async function OPTIONS(request: NextRequest) {
+export async function OPTIONS() {
   return new NextResponse(null, {
     status: 200,
     headers: {

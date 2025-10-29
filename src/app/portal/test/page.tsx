@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function PortalTest() {
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center">
@@ -9,24 +11,24 @@ export default function PortalTest() {
           This page tests that the reverse proxy is working correctly.
         </p>
         <div className="space-y-4">
-          <a
+          <Link
             href="/portal/patient/home/"
             className="block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
           >
             Test Portal Home
-          </a>
-          <a
+          </Link>
+          <Link
             href="/portal/patient/product/33407"
             className="block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors"
           >
             Test Gut Zoomer Product
-          </a>
-          <a
+          </Link>
+          <Link
             href="/"
             className="block bg-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition-colors"
           >
             Back to Home
-          </a>
+          </Link>
         </div>
       </div>
     </div>
