@@ -418,7 +418,7 @@ export default function FullscriptSupplementsBlogPost() {
               Access Fullscript Platform
             </a>
             <a
-              href="https://test.imbtherapies.com/patient/home/"
+              href="https://imbt.wellproz.com/patient/home/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold transition-colors duration-200 border-2"
