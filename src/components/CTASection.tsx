@@ -17,7 +17,7 @@ const CTASection = () => {
   ];
 
   return (
-    <section id='supplements' className='py-20 relative overflow-hidden' style={{ background: 'linear-gradient(135deg, #5A6E8C, rgba(90, 110, 140, 0.9), rgba(90, 110, 140, 0.8))' }}>
+    <section id='supplements' className='py-20 relative overflow-hidden' style={{ background: 'linear-gradient(135deg, #00436E, rgba(0, 67, 110, 0.9), rgba(0, 67, 110, 0.8))' }}>
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -140,7 +140,7 @@ const CTASection = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors duration-200 shadow-lg inline-block text-center"
-              style={{ color: '#5A6E8C' }}
+              style={{ color: '#00436E' }}
             >
               Order Your Test Kit Now
             </motion.a>
@@ -151,7 +151,7 @@ const CTASection = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors duration-200 shadow-lg inline-block text-center"
-              style={{ color: '#5A6E8C' }}
+              style={{ color: '#00436E' }}
             >
               Order Supplements
             </motion.a>
@@ -160,7 +160,7 @@ const CTASection = () => {
               whileTap={{ scale: 0.95 }}
               className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white transition-colors duration-200 shadow-lg"
               style={{ color: 'white' }}
-              onMouseEnter={(e) => { (e.target as HTMLElement).style.backgroundColor = 'white'; (e.target as HTMLElement).style.color = '#5A6E8C'; }}
+              onMouseEnter={(e) => { (e.target as HTMLElement).style.backgroundColor = 'white'; (e.target as HTMLElement).style.color = '#00436E'; }}
               onMouseLeave={(e) => { (e.target as HTMLElement).style.backgroundColor = 'transparent'; (e.target as HTMLElement).style.color = 'white'; }}
             >
               Speak with an Expert

@@ -55,7 +55,7 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section id='testimonials' className='py-20' style={{ backgroundColor: 'rgba(90, 110, 140, 0.05)' }}>
+    <section id='testimonials' className='py-20' style={{ backgroundColor: 'rgba(0, 67, 110, 0.05)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
@@ -64,7 +64,7 @@ const TestimonialsSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold mb-6" style={{ color: '#5A6E8C' }}>
+          <h2 className="text-4xl sm:text-5xl font-bold mb-6" style={{ color: '#00436E' }}>
             What Our
             <span style={{ color: '#68B04D' }}> Customers Say</span>
           </h2>
@@ -82,16 +82,16 @@ const TestimonialsSection = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               whileHover={{ scale: 1.02, y: -5 }}
               className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-2"
-              style={{ borderColor: 'rgba(90, 110, 140, 0.1)' }}
+              style={{ borderColor: 'rgba(0, 67, 110, 0.1)' }}
             >
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 rounded-full flex items-center justify-center mr-4" style={{ backgroundColor: 'rgba(90, 110, 140, 0.2)' }}>
-                  <span className="font-bold text-lg" style={{ color: '#5A6E8C' }}>
+                <div className="w-12 h-12 rounded-full flex items-center justify-center mr-4" style={{ backgroundColor: 'rgba(0, 67, 110, 0.2)' }}>
+                  <span className="font-bold text-lg" style={{ color: '#00436E' }}>
                     {testimonial.image}
                   </span>
                 </div>
                 <div>
-                  <h4 className="font-semibold" style={{ color: '#5A6E8C' }}>
+                  <h4 className="font-semibold" style={{ color: '#00436E' }}>
                     {testimonial.name}
                   </h4>
                   <p className="text-sm text-gray-600">
@@ -123,9 +123,9 @@ const TestimonialsSection = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="mt-16 text-center"
         >
-          <div className="rounded-3xl p-8 shadow-lg max-w-2xl mx-auto border-2" style={{ backgroundColor: 'rgba(90, 110, 140, 0.1)', borderColor: 'rgba(90, 110, 140, 0.2)' }}>
+          <div className="rounded-3xl p-8 shadow-lg max-w-2xl mx-auto border-2" style={{ backgroundColor: 'rgba(0, 67, 110, 0.1)', borderColor: 'rgba(0, 67, 110, 0.2)' }}>
             <div className="flex items-center justify-center mb-4">
-              <div className="text-4xl font-bold mr-4" style={{ color: '#5A6E8C' }}>4.9</div>
+              <div className="text-4xl font-bold mr-4" style={{ color: '#00436E' }}>4.9</div>
               <div>
                 <div className="flex items-center mb-2">
                   {[...Array(5)].map((_, i) => (

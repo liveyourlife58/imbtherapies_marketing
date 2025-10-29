@@ -50,7 +50,7 @@ const HowItWorksSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold mb-6" style={{ color: '#5A6E8C' }}>
+          <h2 className="text-4xl sm:text-5xl font-bold mb-6" style={{ color: '#00436E' }}>
             How It
             <span style={{ color: '#68B04D' }}> Works</span>
           </h2>
@@ -77,12 +77,12 @@ const HowItWorksSection = () => {
                   className={`w-20 h-20 ${step.bgColor} rounded-full flex items-center justify-center mx-auto mb-6 relative`}
                 >
                   <step.icon className={`w-10 h-10 ${step.color}`} />
-                  <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full flex items-center justify-center shadow-lg border-2 border-white" style={{ backgroundColor: '#5A6E8C' }}>
+                  <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full flex items-center justify-center shadow-lg border-2 border-white" style={{ backgroundColor: '#00436E' }}>
                     <span className="text-sm font-bold text-white">{index + 1}</span>
                   </div>
                 </motion.div>
                 
-                <h3 className="text-xl font-bold mb-4" style={{ color: '#5A6E8C' }}>
+                <h3 className="text-xl font-bold mb-4" style={{ color: '#00436E' }}>
                   {step.title}
                 </h3>
                 
@@ -113,7 +113,7 @@ const HowItWorksSection = () => {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="mt-16 text-center"
         >
-          <div className='rounded-3xl p-8 text-white border-2' style={{ background: 'linear-gradient(to right, #5A6E8C, rgba(90, 110, 140, 0.9), rgba(90, 110, 140, 0.8))', borderColor: 'rgba(255, 255, 255, 0.2)' }}>
+          <div className='rounded-3xl p-8 text-white border-2' style={{ background: 'linear-gradient(to right, #00436E, rgba(0, 67, 110, 0.9), rgba(0, 67, 110, 0.8))', borderColor: 'rgba(255, 255, 255, 0.2)' }}>
             <h3 className="text-2xl font-bold mb-4">
               Ready to Start Your Health Journey?
             </h3>
@@ -128,7 +128,7 @@ const HowItWorksSection = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors duration-200 shadow-lg inline-block text-center"
-                style={{ color: '#5A6E8C' }}
+                style={{ color: '#00436E' }}
               >
                 Order Your Test Kit Today
               </motion.a>
@@ -139,7 +139,7 @@ const HowItWorksSection = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors duration-200 shadow-lg inline-block text-center"
-                style={{ color: '#5A6E8C' }}
+                style={{ color: '#00436E' }}
               >
                 Order Supplements
               </motion.a>

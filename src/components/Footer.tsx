@@ -45,7 +45,7 @@ const Footer = () => {
     <footer 
       id="contact" 
       className="text-white"
-      style={{ backgroundColor: '#5A6E8C' }}
+      style={{ backgroundColor: '#00436E' }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Main Footer Content */}

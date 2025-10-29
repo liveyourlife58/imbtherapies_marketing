@@ -17,7 +17,7 @@ const TestsSection = () => {
       image: '/images/gut_zoomer.png',
       features: ['Vibrant Wellness Microbiome Analysis', 'Digestive Enzymes', 'Inflammation Markers'],
       icon: TestTube,
-      color: '#5A6E8C',
+      color: '#00436E',
       orderLink: 'https://imbt.wellproz.com/patient/product/33407'
     },
     {
@@ -35,7 +35,7 @@ const TestsSection = () => {
       image: '/images/food_sensitivity_complete.png',
       features: ['200+ Foods Tested', 'IgG Antibodies', 'Personalized Results'],
       icon: Heart,
-      color: '#5A6E8C',
+      color: '#00436E',
       orderLink: 'https://imbt.wellproz.com/patient/product/33729'
     }
   ];
@@ -44,7 +44,7 @@ const TestsSection = () => {
     <section 
       id="vibrant-tests" 
       className="py-20"
-      style={{ backgroundColor: 'rgba(90, 110, 140, 0.05)' }}
+      style={{ backgroundColor: 'rgba(0, 67, 110, 0.05)' }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -54,7 +54,7 @@ const TestsSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold mb-6" style={{ color: '#5A6E8C' }}>
+          <h2 className="text-4xl sm:text-5xl font-bold mb-6" style={{ color: '#00436E' }}>
             Professional Lab Testing by
             <span className="block" style={{ color: '#68B04D' }}>Vibrant Wellness</span>
           </h2>
@@ -73,7 +73,7 @@ const TestsSection = () => {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               whileHover={{ scale: 1.02, y: -5 }}
               className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-2"
-              style={{ borderColor: 'rgba(90, 110, 140, 0.1)' }}
+              style={{ borderColor: 'rgba(0, 67, 110, 0.1)' }}
             >
               {/* Test Image */}
               <div className="relative h-48 mb-6 rounded-xl overflow-hidden">
@@ -95,7 +95,7 @@ const TestsSection = () => {
                   >
                     <test.icon className="w-6 h-6" style={{ color: test.color }} />
                   </div>
-                  <h3 className="text-xl font-bold" style={{ color: '#5A6E8C' }}>
+                  <h3 className="text-xl font-bold" style={{ color: '#00436E' }}>
                     {test.name}
                   </h3>
                 </div>
@@ -125,7 +125,7 @@ const TestsSection = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="inline-block bg-white px-6 py-3 rounded-full font-semibold text-sm transition-colors duration-200 shadow-lg border-2"
-                  style={{ color: '#5A6E8C', borderColor: '#5A6E8C' }}
+                  style={{ color: '#00436E', borderColor: '#00436E' }}
                 >
                   Order This Test
                 </motion.a>

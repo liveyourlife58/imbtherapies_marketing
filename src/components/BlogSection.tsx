@@ -57,7 +57,7 @@ const BlogSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold mb-6" style={{ color: '#5A6E8C' }}>
+          <h2 className="text-4xl sm:text-5xl font-bold mb-6" style={{ color: '#00436E' }}>
             Latest Insights
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -74,7 +74,7 @@ const BlogSection = () => {
               transition={{ duration: 0.6, delay: index * 0.2 }}
               whileHover={{ scale: 1.02, y: -5 }}
               className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border-2"
-              style={{ borderColor: 'rgba(90, 110, 140, 0.1)' }}
+              style={{ borderColor: 'rgba(0, 67, 110, 0.1)' }}
             >
               <div className="relative h-48">
                 <Image
@@ -98,11 +98,11 @@ const BlogSection = () => {
                 </div>
                 <span 
                   className="inline-block px-3 py-1 rounded-full text-sm font-medium mb-4"
-                  style={{ backgroundColor: 'rgba(90, 110, 140, 0.1)', color: '#5A6E8C' }}
+                  style={{ backgroundColor: 'rgba(0, 67, 110, 0.1)', color: '#00436E' }}
                 >
                   {post.category}
                 </span>
-                <h3 className="text-lg font-bold mb-3" style={{ color: '#5A6E8C' }}>
+                <h3 className="text-lg font-bold mb-3" style={{ color: '#00436E' }}>
                   {post.title}
                 </h3>
                 <p className="text-gray-600 mb-4 leading-relaxed text-sm">
@@ -111,7 +111,7 @@ const BlogSection = () => {
                 <Link
                   href={`/blog/${post.id}`}
                   className="inline-flex items-center gap-2 font-semibold text-sm transition-colors duration-200"
-                  style={{ color: '#5A6E8C' }}
+                  style={{ color: '#00436E' }}
                 >
                   Read More
                   <ArrowRight className="w-4 h-4" />
@@ -130,9 +130,9 @@ const BlogSection = () => {
         >
           <div 
             className="rounded-3xl p-8 shadow-lg border-2"
-            style={{ backgroundColor: 'rgba(90, 110, 140, 0.1)', borderColor: 'rgba(90, 110, 140, 0.2)' }}
+            style={{ backgroundColor: 'rgba(0, 67, 110, 0.1)', borderColor: 'rgba(0, 67, 110, 0.2)' }}
           >
-            <h3 className="text-2xl font-bold mb-4" style={{ color: '#5A6E8C' }}>
+            <h3 className="text-2xl font-bold mb-4" style={{ color: '#00436E' }}>
               Stay Updated with Our Latest Articles
             </h3>
             <p className="text-lg text-gray-600 mb-6">
@@ -141,7 +141,7 @@ const BlogSection = () => {
             <Link
               href="/blog"
               className="inline-flex items-center gap-2 bg-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors duration-200 shadow-lg"
-              style={{ color: '#5A6E8C' }}
+              style={{ color: '#00436E' }}
             >
               View All Articles
               <ArrowRight className="w-5 h-5" />

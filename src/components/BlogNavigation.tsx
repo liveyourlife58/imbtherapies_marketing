@@ -33,8 +33,8 @@ export default function BlogNavigation() {
       transition={{ duration: 0.6, ease: 'easeOut' }}
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 shadow-lg"
       style={{
-        backgroundColor: '#5A6E8C',
-        borderBottom: '1px solid rgba(90, 110, 140, 0.3)'
+        backgroundColor: '#00436E',
+        borderBottom: '1px solid rgba(0, 67, 110, 0.3)'
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

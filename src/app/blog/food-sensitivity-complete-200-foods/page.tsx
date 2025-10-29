@@ -339,7 +339,7 @@ export default function FoodSensitivityCompleteBlogPost() {
     <div className="min-h-screen bg-white">
       <BlogNavigation />
       {/* Header */}
-      <div className="py-20 mt-16" style={{ background: 'linear-gradient(135deg, #5A6E8C 0%, #68B04D 100%)' }}>
+      <div className="py-20 mt-16" style={{ background: 'linear-gradient(135deg, #00436E 0%, #68B04D 100%)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link
             href="/blog"
@@ -405,9 +405,9 @@ export default function FoodSensitivityCompleteBlogPost() {
             dangerouslySetInnerHTML={{ __html: post.content }}
             className="blog-content"
             style={{
-              '--tw-prose-headings': '#5A6E8C',
-              '--tw-prose-links': '#5A6E8C',
-              '--tw-prose-bold': '#5A6E8C',
+              '--tw-prose-headings': '#00436E',
+              '--tw-prose-links': '#00436E',
+              '--tw-prose-bold': '#00436E',
             } as React.CSSProperties}
           />
         </article>
@@ -425,7 +425,7 @@ export default function FoodSensitivityCompleteBlogPost() {
               />
             </div>
             <div>
-              <h3 className="font-bold text-lg" style={{ color: '#5A6E8C' }}>
+              <h3 className="font-bold text-lg" style={{ color: '#00436E' }}>
                 {post.author}
               </h3>
               <p className="text-gray-600">
@@ -436,8 +436,8 @@ export default function FoodSensitivityCompleteBlogPost() {
         </div>
 
         {/* CTA */}
-        <div className="mt-16 p-8 rounded-2xl text-center" style={{ backgroundColor: 'rgba(90, 110, 140, 0.1)' }}>
-          <h3 className="text-2xl font-bold mb-4" style={{ color: '#5A6E8C' }}>
+        <div className="mt-16 p-8 rounded-2xl text-center" style={{ backgroundColor: 'rgba(0, 67, 110, 0.1)' }}>
+          <h3 className="text-2xl font-bold mb-4" style={{ color: '#00436E' }}>
             Ready to Discover Your Food Sensitivities?
           </h3>
           <p className="text-gray-600 mb-6">
@@ -449,7 +449,7 @@ export default function FoodSensitivityCompleteBlogPost() {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white transition-colors duration-200"
-              style={{ backgroundColor: '#5A6E8C' }}
+              style={{ backgroundColor: '#00436E' }}
             >
               Order Food Sensitivity Complete Test
             </a>

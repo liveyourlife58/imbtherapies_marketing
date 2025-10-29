@@ -35,7 +35,7 @@ export default function AboutSection() {
               </div>
               <div 
                 className="absolute -bottom-4 -left-4 w-16 h-16 rounded-full flex items-center justify-center shadow-lg"
-                style={{ backgroundColor: '#5A6E8C' }}
+                style={{ backgroundColor: '#00436E' }}
               >
                 <Award className="w-8 h-8 text-white" />
               </div>
@@ -51,7 +51,7 @@ export default function AboutSection() {
             className="space-y-8"
           >
             <div>
-              <h2 className="text-4xl sm:text-5xl font-bold mb-6" style={{ color: '#5A6E8C' }}>
+              <h2 className="text-4xl sm:text-5xl font-bold mb-6" style={{ color: '#00436E' }}>
                 Meet Daniel
                 <span className="block" style={{ color: '#68B04D' }}>Your Health Partner</span>
               </h2>
@@ -67,12 +67,12 @@ export default function AboutSection() {
               <div className="flex items-start space-x-4">
                 <div 
                   className="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0"
-                  style={{ backgroundColor: 'rgba(90, 110, 140, 0.1)' }}
+                  style={{ backgroundColor: 'rgba(0, 67, 110, 0.1)' }}
                 >
-                  <Target className="w-6 h-6" style={{ color: '#5A6E8C' }} />
+                  <Target className="w-6 h-6" style={{ color: '#00436E' }} />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold mb-2" style={{ color: '#5A6E8C' }}>
+                  <h3 className="text-lg font-semibold mb-2" style={{ color: '#00436E' }}>
                     Personalized Approach
                   </h3>
                   <p className="text-gray-600">
@@ -90,7 +90,7 @@ export default function AboutSection() {
                   <Heart className="w-6 h-6" style={{ color: '#68B04D' }} />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold mb-2" style={{ color: '#5A6E8C' }}>
+                  <h3 className="text-lg font-semibold mb-2" style={{ color: '#00436E' }}>
                     Holistic Wellness
                   </h3>
                   <p className="text-gray-600">
@@ -103,12 +103,12 @@ export default function AboutSection() {
               <div className="flex items-start space-x-4">
                 <div 
                   className="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0"
-                  style={{ backgroundColor: 'rgba(90, 110, 140, 0.1)' }}
+                  style={{ backgroundColor: 'rgba(0, 67, 110, 0.1)' }}
                 >
-                  <Award className="w-6 h-6" style={{ color: '#5A6E8C' }} />
+                  <Award className="w-6 h-6" style={{ color: '#00436E' }} />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold mb-2" style={{ color: '#5A6E8C' }}>
+                  <h3 className="text-lg font-semibold mb-2" style={{ color: '#00436E' }}>
                     Proven Results
                   </h3>
                   <p className="text-gray-600">

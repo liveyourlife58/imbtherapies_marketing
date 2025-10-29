@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { CheckCircle, DollarSign, UserCheck, HeadphonesIcon } from 'lucide-react';
+import Image from 'next/image';
 
 export default function ValuePropositionSection() {
   const valueProps = [
@@ -15,7 +16,7 @@ export default function ValuePropositionSection() {
       icon: DollarSign,
       title: 'No Consultation Fees',
       description: 'Lowest prices with no required consultation fees - pay only for what you need',
-      color: '#5A6E8C'
+      color: '#00436E'
     },
     {
       icon: UserCheck,
@@ -27,29 +28,52 @@ export default function ValuePropositionSection() {
       icon: HeadphonesIcon,
       title: 'In-Person Support',
       description: 'Professional in-person support available whenever you need guidance and assistance',
-      color: '#5A6E8C'
+      color: '#00436E'
     }
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl sm:text-5xl font-bold mb-6" style={{ color: '#5A6E8C' }}>
-            Why Choose
-            <span className="block" style={{ color: '#68B04D' }}>IMBTherapies?</span>
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            The premier destination for Vibrant Wellness testing and Fullscript supplements. 
-            Experience healthcare on your terms with complete autonomy and optional support.
-          </p>
-        </motion.div>
+        {/* Header with Image */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+          {/* Image */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="relative h-96 rounded-2xl overflow-hidden shadow-xl"
+          >
+            <Image
+              src="/images/healthy_people.jpg"
+              alt="Healthy People"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+          </motion.div>
+          
+          {/* Text Content */}
+          <div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="text-center lg:text-left"
+            >
+              <h2 className="text-4xl sm:text-5xl font-bold mb-6" style={{ color: '#00436E' }}>
+                Why Choose
+                <span className="block" style={{ color: '#68B04D' }}>IMBTherapies?</span>
+              </h2>
+              <p className="text-xl text-gray-600">
+                The premier destination for Vibrant Wellness testing and Fullscript supplements. 
+                Experience healthcare on your terms with complete autonomy and optional support.
+              </p>
+            </motion.div>
+          </div>
+        </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {valueProps.map((prop, index) => (
@@ -61,7 +85,7 @@ export default function ValuePropositionSection() {
               viewport={{ once: true }}
               className="text-center p-8 rounded-2xl border-2 hover:shadow-lg transition-all duration-300"
               style={{ 
-                borderColor: 'rgba(90, 110, 140, 0.1)',
+                borderColor: 'rgba(0, 67, 110, 0.1)',
                 backgroundColor: 'rgba(255, 255, 255, 0.5)'
               }}
             >
@@ -71,7 +95,7 @@ export default function ValuePropositionSection() {
               >
                 <prop.icon className="w-8 h-8" style={{ color: prop.color }} />
               </div>
-              <h3 className="text-xl font-bold mb-4" style={{ color: '#5A6E8C' }}>
+              <h3 className="text-xl font-bold mb-4" style={{ color: '#00436E' }}>
                 {prop.title}
               </h3>
               <p className="text-gray-600 leading-relaxed">
@@ -88,9 +112,9 @@ export default function ValuePropositionSection() {
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
           className="text-center mt-16 p-8 rounded-2xl"
-          style={{ backgroundColor: 'rgba(90, 110, 140, 0.05)' }}
+          style={{ backgroundColor: 'rgba(0, 67, 110, 0.05)' }}
         >
-          <h3 className="text-2xl font-bold mb-4" style={{ color: '#5A6E8C' }}>
+          <h3 className="text-2xl font-bold mb-4" style={{ color: '#00436E' }}>
             Ready to Take Control of Your Health?
           </h3>
           <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
@@ -103,7 +127,7 @@ export default function ValuePropositionSection() {
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 rounded-full text-white font-semibold transition-all duration-200 hover:scale-105"
-              style={{ backgroundColor: '#5A6E8C' }}
+              style={{ backgroundColor: '#00436E' }}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

@@ -20,9 +20,9 @@ export default function Home() {
         <ValuePropositionSection />
         <TestsSection />
         <SupplementsSection />
-        <BlogSection />
-        <HowItWorksSection />
         <AboutSection />
+        <HowItWorksSection />
+        <BlogSection />
         <TestimonialsSection />
       </main>
       <Footer />

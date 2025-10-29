@@ -97,7 +97,7 @@ export default function BlogPage() {
     <div className="min-h-screen bg-white">
       <BlogNavigation />
       {/* Header */}
-      <div className="py-20 mt-16" style={{ background: 'linear-gradient(135deg, #5A6E8C 0%, #68B04D 100%)' }}>
+      <div className="py-20 mt-16" style={{ background: 'linear-gradient(135deg, #00436E 0%, #68B04D 100%)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
             Digestive Health Blog
@@ -117,9 +117,9 @@ export default function BlogPage() {
               key={category}
               className="px-6 py-3 rounded-full border-2 transition-colors duration-200"
               style={{ 
-                borderColor: category === 'All' ? '#5A6E8C' : 'rgba(90, 110, 140, 0.3)',
-                color: category === 'All' ? '#5A6E8C' : '#6B7280',
-                backgroundColor: category === 'All' ? 'rgba(90, 110, 140, 0.1)' : 'transparent'
+                borderColor: category === 'All' ? '#00436E' : 'rgba(0, 67, 110, 0.3)',
+                color: category === 'All' ? '#00436E' : '#6B7280',
+                backgroundColor: category === 'All' ? 'rgba(0, 67, 110, 0.1)' : 'transparent'
               }}
             >
               {category}
@@ -130,7 +130,7 @@ export default function BlogPage() {
         {/* Featured Posts */}
         {featuredPosts.length > 0 && (
           <div className="mb-16">
-            <h2 className="text-3xl font-bold mb-8" style={{ color: '#5A6E8C' }}>
+            <h2 className="text-3xl font-bold mb-8" style={{ color: '#00436E' }}>
               Featured Articles
             </h2>
             <div className="grid lg:grid-cols-2 gap-8">
@@ -138,7 +138,7 @@ export default function BlogPage() {
                 <article
                   key={post.id}
                   className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden border-2"
-                  style={{ borderColor: 'rgba(90, 110, 140, 0.1)' }}
+                  style={{ borderColor: 'rgba(0, 67, 110, 0.1)' }}
                 >
                   <div className="relative h-64">
                     <Image
@@ -170,11 +170,11 @@ export default function BlogPage() {
                     </div>
                     <span 
                       className="inline-block px-3 py-1 rounded-full text-sm font-medium mb-4"
-                      style={{ backgroundColor: 'rgba(90, 110, 140, 0.1)', color: '#5A6E8C' }}
+                      style={{ backgroundColor: 'rgba(0, 67, 110, 0.1)', color: '#00436E' }}
                     >
                       {post.category}
                     </span>
-                    <h3 className="text-xl font-bold mb-3" style={{ color: '#5A6E8C' }}>
+                    <h3 className="text-xl font-bold mb-3" style={{ color: '#00436E' }}>
                       {post.title}
                     </h3>
                     <p className="text-gray-600 mb-4 leading-relaxed">
@@ -183,7 +183,7 @@ export default function BlogPage() {
                     <Link
                       href={`/blog/${post.id}`}
                       className="inline-flex items-center gap-2 font-semibold transition-colors duration-200"
-                      style={{ color: '#5A6E8C' }}
+                      style={{ color: '#00436E' }}
                     >
                       Read More
                       <ArrowRight className="w-4 h-4" />
@@ -197,7 +197,7 @@ export default function BlogPage() {
 
         {/* Regular Posts */}
         <div>
-          <h2 className="text-3xl font-bold mb-8" style={{ color: '#5A6E8C' }}>
+          <h2 className="text-3xl font-bold mb-8" style={{ color: '#00436E' }}>
             Latest Articles
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -205,7 +205,7 @@ export default function BlogPage() {
               <article
                 key={post.id}
                 className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden border-2"
-                style={{ borderColor: 'rgba(90, 110, 140, 0.1)' }}
+                style={{ borderColor: 'rgba(0, 67, 110, 0.1)' }}
               >
                 <div className="relative h-48">
                   <Image
@@ -229,11 +229,11 @@ export default function BlogPage() {
                   </div>
                   <span 
                     className="inline-block px-3 py-1 rounded-full text-sm font-medium mb-4"
-                    style={{ backgroundColor: 'rgba(90, 110, 140, 0.1)', color: '#5A6E8C' }}
+                    style={{ backgroundColor: 'rgba(0, 67, 110, 0.1)', color: '#00436E' }}
                   >
                     {post.category}
                   </span>
-                  <h3 className="text-lg font-bold mb-3" style={{ color: '#5A6E8C' }}>
+                  <h3 className="text-lg font-bold mb-3" style={{ color: '#00436E' }}>
                     {post.title}
                   </h3>
                   <p className="text-gray-600 mb-4 leading-relaxed text-sm">
@@ -242,7 +242,7 @@ export default function BlogPage() {
                   <Link
                     href={`/blog/${post.id}`}
                     className="inline-flex items-center gap-2 font-semibold text-sm transition-colors duration-200"
-                    style={{ color: '#5A6E8C' }}
+                    style={{ color: '#00436E' }}
                   >
                     Read More
                     <ArrowRight className="w-4 h-4" />

@@ -58,7 +58,7 @@ const FeaturesSection = () => {
     <section 
       id="testing" 
       className="py-20"
-      style={{ backgroundColor: 'rgba(90, 110, 140, 0.05)' }}
+      style={{ backgroundColor: 'rgba(0, 67, 110, 0.05)' }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -68,7 +68,7 @@ const FeaturesSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold mb-6" style={{ color: '#5A6E8C' }}>
+          <h2 className="text-4xl sm:text-5xl font-bold mb-6" style={{ color: '#00436E' }}>
             Why Choose Our
             <span className="block" style={{ color: '#68B04D' }}>Testing Solutions</span>
           </h2>
@@ -86,19 +86,21 @@ const FeaturesSection = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               whileHover={{ scale: 1.05, y: -5 }}
               className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border-2"
-              style={{ borderColor: 'rgba(90, 110, 140, 0.1)' }}
+              style={{ borderColor: 'rgba(0, 67, 110, 0.1)' }}
             >
-              <motion.div
-                whileHover={{ scale: 1.1, rotate: 5 }}
-                className="w-16 h-16 rounded-2xl flex items-center justify-center mb-6"
-                style={{ backgroundColor: feature.color === 'text-primary' ? 'rgba(90, 110, 140, 0.1)' : 'rgba(104, 176, 77, 0.1)' }}
-              >
-                <feature.icon className="w-8 h-8" style={{ color: feature.color === 'text-primary' ? '#5A6E8C' : '#68B04D' }} />
-              </motion.div>
-              
-              <h3 className="text-xl font-bold mb-4" style={{ color: '#5A6E8C' }}>
-                {feature.title}
-              </h3>
+              <div className="flex items-center mb-4">
+                <motion.div
+                  whileHover={{ scale: 1.1, rotate: 5 }}
+                  className="w-12 h-12 rounded-xl flex items-center justify-center mr-4 flex-shrink-0"
+                  style={{ backgroundColor: feature.color === 'text-primary' ? 'rgba(0, 67, 110, 0.1)' : 'rgba(104, 176, 77, 0.1)' }}
+                >
+                  <feature.icon className="w-6 h-6" style={{ color: feature.color === 'text-primary' ? '#00436E' : '#68B04D' }} />
+                </motion.div>
+                
+                <h3 className="text-xl font-bold" style={{ color: '#00436E' }}>
+                  {feature.title}
+                </h3>
+              </div>
               
               <p className="text-gray-600 leading-relaxed">
                 {feature.description}
@@ -113,7 +115,7 @@ const FeaturesSection = () => {
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8, delay: 0.6 }}
           className="mt-20 rounded-3xl p-8 shadow-lg border-2"
-          style={{ backgroundColor: 'rgba(90, 110, 140, 0.1)', borderColor: 'rgba(90, 110, 140, 0.2)' }}
+          style={{ backgroundColor: 'rgba(0, 67, 110, 0.1)', borderColor: 'rgba(0, 67, 110, 0.2)' }}
         >
           <div className="grid md:grid-cols-4 gap-8 text-center">
             {[
@@ -129,7 +131,7 @@ const FeaturesSection = () => {
                 transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
                 className="p-4"
               >
-                <div className="text-3xl font-bold mb-2" style={{ color: '#5A6E8C' }}>
+                <div className="text-3xl font-bold mb-2" style={{ color: '#00436E' }}>
                   {stat.number}
                 </div>
                 <div className="text-gray-600 font-medium">
