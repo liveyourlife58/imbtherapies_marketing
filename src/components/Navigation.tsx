@@ -17,13 +17,13 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'Testing Kits', href: 'https://imbt.wellproz.com/patient/home/', external: true },
-    { name: 'Supplements', href: '#fullscript-supplements' },
-    { name: 'How It Works', href: '#how-it-works' },
-    { name: 'About', href: '#about' },
-    { name: 'Testimonials', href: '#testimonials' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '#home', external: false },
+    { name: 'Testing Kits', href: '#vibrant-tests', external: false },
+    { name: 'Supplements', href: '#fullscript-supplements', external: false },
+    { name: 'How It Works', href: '#how-it-works', external: false },
+    { name: 'About', href: '#about', external: false },
+    { name: 'Testimonials', href: '#testimonials', external: false },
+    { name: 'Contact', href: '#contact', external: false },
   ];
 
   return (

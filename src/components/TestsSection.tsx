@@ -139,26 +139,29 @@ const TestsSection = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-16 text-center"
+          className="mt-16"
         >
           <div 
-            className="rounded-3xl p-8 shadow-lg border-2"
-            style={{ backgroundColor: 'rgba(90, 110, 140, 0.1)', borderColor: 'rgba(90, 110, 140, 0.2)' }}
+            className="rounded-3xl p-8 shadow-lg border-2 text-center"
+            style={{ backgroundColor: 'rgba(104, 176, 77, 0.1)', borderColor: 'rgba(104, 176, 77, 0.2)' }}
           >
-            <h3 className="text-2xl font-bold mb-4" style={{ color: '#5A6E8C' }}>
-              Need Help Choosing the Right Vibrant Wellness Test?
+            <h3 className="text-2xl font-bold mb-4" style={{ color: '#68B04D' }}>
+              Not Seeing What You&apos;re Looking For?
             </h3>
             <p className="text-lg text-gray-600 mb-6">
-              Our health experts can help you select the most appropriate Vibrant Wellness testing panel for your specific needs.
+              Browse our complete catalog of Vibrant Wellness tests and find the perfect testing panel for your health journey.
             </p>
-            <motion.button
+            <motion.a
+              href="https://imbt.wellproz.com/patient/home/"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors duration-200 shadow-lg"
-              style={{ color: '#5A6E8C' }}
+              className="inline-block bg-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors duration-200 shadow-lg"
+              style={{ color: '#68B04D' }}
             >
-              Speak with an Expert
-            </motion.button>
+              View Full Test Catalog
+            </motion.a>
           </div>
         </motion.div>
       </div>

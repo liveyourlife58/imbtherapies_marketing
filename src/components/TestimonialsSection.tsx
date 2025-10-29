@@ -55,7 +55,7 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section id='about' className='py-20' style={{ backgroundColor: 'rgba(90, 110, 140, 0.05)' }}>
+    <section id='testimonials' className='py-20' style={{ backgroundColor: 'rgba(90, 110, 140, 0.05)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
