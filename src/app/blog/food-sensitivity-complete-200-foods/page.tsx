@@ -321,7 +321,7 @@ export default function FoodSensitivityCompleteBlogPost() {
       <h2>Ready to Find Out What's Really Going On?</h2>
       <p>If you're tired of feeling unwell and suspect certain foods might be the culprit, the Food Sensitivity Complete test can give you real answers. It's like having a roadmap to better health - you'll finally know exactly which foods are helping or hurting your body.</p>
       
-      <p><a href="https://imbt.wellproz.com/patient/product/33729" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">Order Your Food Sensitivity Complete Test Today</a></p>
+      <p><a href="https://test.imbtherapies.com/patient/product/33729" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">Order Your Food Sensitivity Complete Test Today</a></p>
       
       <p>Have questions? We're here to help! Contact us to learn more about how the Food Sensitivity Complete test can benefit your health journey.</p>
       
@@ -445,7 +445,7 @@ export default function FoodSensitivityCompleteBlogPost() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://imbt.wellproz.com/patient/product/33729"
+              href="https://test.imbtherapies.com/patient/product/33729"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white transition-colors duration-200"
