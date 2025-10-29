@@ -115,7 +115,7 @@ const SupplementsSection = () => {
 
                 {/* CTA Button */}
                 <motion.a
-                  href="/supplements/welcome/imbt"
+                  href="https://us.fullscript.com/welcome/imbt"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.05 }}
@@ -148,7 +148,7 @@ const SupplementsSection = () => {
               Based on your test results, our experts will create a customized Fullscript supplement plan tailored to your specific health needs.
             </p>
             <motion.a
-              href="/supplements/welcome/imbt"
+              href="https://us.fullscript.com/welcome/imbt"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}

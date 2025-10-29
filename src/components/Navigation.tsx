@@ -18,7 +18,7 @@ const Navigation = () => {
 
   const navItems = [
     { name: 'Home', href: '#home' },
-    { name: 'Testing Kits', href: '/patient/home/', external: false },
+    { name: 'Testing Kits', href: 'https://imbt.wellproz.com/patient/home/', external: true },
     { name: 'Supplements', href: '#fullscript-supplements' },
     { name: 'How It Works', href: '#how-it-works' },
     { name: 'About', href: '#about' },
