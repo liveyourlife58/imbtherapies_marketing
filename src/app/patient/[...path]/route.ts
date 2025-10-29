@@ -10,14 +10,7 @@ export async function GET(
     // Reconstruct the path
     const resolvedParams = await params;
     const path = resolvedParams.path.join('/');
-    
-    // Handle the specific case where we need to add 'patient' to the path
-    let targetUrl;
-    if (path.startsWith('patient/')) {
-      targetUrl = `${TARGET_URL}/${path}`;
-    } else {
-      targetUrl = `${TARGET_URL}/patient/${path}`;
-    }
+    const targetUrl = `${TARGET_URL}/patient/${path}`;
     
     // Get query parameters
     const searchParams = request.nextUrl.searchParams;
@@ -70,7 +63,7 @@ export async function GET(
 
     return proxiedResponse;
   } catch (error) {
-    console.error('Proxy error:', error);
+    console.error('WellProz proxy error:', error);
     return new NextResponse('Proxy Error', { status: 500 });
   }
 }
@@ -82,7 +75,7 @@ export async function POST(
   try {
     const resolvedParams = await params;
     const path = resolvedParams.path.join('/');
-    const targetUrl = `${TARGET_URL}/${path}`;
+    const targetUrl = `${TARGET_URL}/patient/${path}`;
     
     const searchParams = request.nextUrl.searchParams;
     const queryString = searchParams.toString();
@@ -129,7 +122,7 @@ export async function POST(
 
     return proxiedResponse;
   } catch (error) {
-    console.error('Proxy error:', error);
+    console.error('WellProz proxy error:', error);
     return new NextResponse('Proxy Error', { status: 500 });
   }
 }

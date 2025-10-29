@@ -12,13 +12,13 @@ export default function PortalTest() {
         </p>
         <div className="space-y-4">
           <Link
-            href="/portal/patient/home/"
+            href="/patient/home/"
             className="block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
           >
             Test Portal Home
           </Link>
           <Link
-            href="/portal/patient/product/33407"
+            href="/patient/product/33407"
             className="block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors"
           >
             Test Gut Zoomer Product

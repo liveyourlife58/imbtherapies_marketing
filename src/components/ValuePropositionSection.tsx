@@ -99,7 +99,7 @@ export default function ValuePropositionSection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <motion.a
-              href="/portal/patient/home/"
+              href="/patient/home/"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 rounded-full text-white font-semibold transition-all duration-200 hover:scale-105"

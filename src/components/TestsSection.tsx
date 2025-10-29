@@ -18,7 +18,7 @@ const TestsSection = () => {
       features: ['Vibrant Wellness Microbiome Analysis', 'Digestive Enzymes', 'Inflammation Markers'],
       icon: TestTube,
       color: '#5A6E8C',
-      orderLink: '/portal/patient/product/33407'
+      orderLink: '/patient/product/33407'
     },
     {
       name: 'Vibrant Wellness Wheat Zoomer',
@@ -27,7 +27,7 @@ const TestsSection = () => {
       features: ['Gluten Sensitivity', 'Autoimmune Markers', 'Celiac Screening'],
       icon: Shield,
       color: '#68B04D',
-      orderLink: '/portal/patient/product/33735'
+      orderLink: '/patient/product/33735'
     },
     {
       name: 'Vibrant Wellness Food Sensitivity Complete',
@@ -36,7 +36,7 @@ const TestsSection = () => {
       features: ['200+ Foods Tested', 'IgG Antibodies', 'Personalized Results'],
       icon: Heart,
       color: '#5A6E8C',
-      orderLink: '/portal/patient/product/33729'
+      orderLink: '/patient/product/33729'
     }
   ];
 

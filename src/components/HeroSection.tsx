@@ -119,7 +119,7 @@ const HeroSection = () => {
               className="flex flex-col sm:flex-row gap-4"
             >
               <motion.a
-                href="/portal/patient/home/"
+                href="/patient/home/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
