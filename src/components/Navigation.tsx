@@ -18,7 +18,7 @@ const Navigation = () => {
 
   const navItems = [
     { name: 'Home', href: '#home' },
-    { name: 'Testing Kits', href: '#vibrant-tests' },
+    { name: 'Testing Kits', href: '/portal/patient/home/', external: false },
     { name: 'Supplements', href: '#fullscript-supplements' },
     { name: 'How It Works', href: '#how-it-works' },
     { name: 'About', href: '#about' },
@@ -64,6 +64,8 @@ const Navigation = () => {
               <motion.a
                 key={item.name}
                 href={item.href}
+                target={item.external ? "_blank" : undefined}
+                rel={item.external ? "noopener noreferrer" : undefined}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="text-white hover:text-accent transition-colors duration-200 font-medium"
@@ -114,6 +116,8 @@ const Navigation = () => {
                 <motion.a
                   key={item.name}
                   href={item.href}
+                  target={item.external ? "_blank" : undefined}
+                  rel={item.external ? "noopener noreferrer" : undefined}
                   whileHover={{ x: 10 }}
                   onClick={() => setIsOpen(false)}
                   className="block text-white hover:text-accent transition-colors duration-200 font-medium"

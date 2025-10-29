@@ -99,7 +99,7 @@ export default function ValuePropositionSection() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <motion.a
-              href="https://imbt.wellproz.com/patient/home/"
+              href="/portal/patient/home/"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 rounded-full text-white font-semibold transition-all duration-200 hover:scale-105"
@@ -110,7 +110,7 @@ export default function ValuePropositionSection() {
               Order Your Test Kit
             </motion.a>
             <motion.a
-              href="https://us.fullscript.com/welcome/imbt"
+              href="/supplements/welcome/imbt"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 rounded-full text-white font-semibold transition-all duration-200 hover:scale-105"

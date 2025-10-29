@@ -1,0 +1,34 @@
+export default function SupplementsTest() {
+  return (
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="bg-white p-8 rounded-lg shadow-lg max-w-md text-center">
+        <h1 className="text-2xl font-bold text-gray-800 mb-4">
+          Supplements Test Page
+        </h1>
+        <p className="text-gray-600 mb-6">
+          This page tests that the Fullscript reverse proxy is working correctly.
+        </p>
+        <div className="space-y-4">
+          <a
+            href="/supplements/welcome/imbt"
+            className="block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors"
+          >
+            Test Fullscript Platform
+          </a>
+          <a
+            href="/portal/test/"
+            className="block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+          >
+            Test Portal (WellProz)
+          </a>
+          <a
+            href="/"
+            className="block bg-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition-colors"
+          >
+            Back to Home
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}

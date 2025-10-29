@@ -285,7 +285,7 @@ export default function FullscriptSupplementsBlogPost() {
       <h2>Ready to Transform Your Health with Fullscript?</h2>
       <p>If you're ready to take control of your digestive health with personalized, professional-grade supplements, the first step is getting your Vibrant Wellness test results. It's like having a roadmap to better health - you'll finally know exactly what your body needs and how to give it the right support.</p>
       
-      <p><a href="https://us.fullscript.com/welcome/imbt" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">Access Fullscript Platform Today</a></p>
+      <p><a href="/supplements/welcome/imbt" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">Access Fullscript Platform Today</a></p>
       
       <p>Have questions? We're here to help! Contact us to learn more about how Fullscript supplements can benefit your health journey.</p>
       
@@ -409,7 +409,7 @@ export default function FullscriptSupplementsBlogPost() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://us.fullscript.com/welcome/imbt"
+              href="/supplements/welcome/imbt"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold text-white transition-colors duration-200"
@@ -418,7 +418,7 @@ export default function FullscriptSupplementsBlogPost() {
               Access Fullscript Platform
             </a>
             <a
-              href="https://imbt.wellproz.com/patient/home/"
+              href="/portal/patient/home/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-8 py-4 rounded-full font-semibold transition-colors duration-200 border-2"

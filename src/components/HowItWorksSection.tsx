@@ -122,7 +122,7 @@ const HowItWorksSection = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.a
-                href="https://imbt.wellproz.com/patient/home/"
+                href="/portal/patient/home/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
@@ -133,7 +133,7 @@ const HowItWorksSection = () => {
                 Order Your Test Kit Today
               </motion.a>
               <motion.a
-                href="https://us.fullscript.com/welcome/imbt"
+                href="/supplements/welcome/imbt"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
