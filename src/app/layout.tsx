@@ -132,6 +132,8 @@ export default function RootLayout({
         "contactPoint": {
           "@type": "ContactPoint",
           "contactType": "customer service",
+          "telephone": "+1-480-442-2858",
+          "email": "imbtherapies@gmail.com",
           "availableLanguage": "English"
         }
       },
@@ -189,9 +191,12 @@ export default function RootLayout({
         "name": "IMB Therapies",
         "description": "Professional at-home digestive and food sensitivity lab testing kits by Vibrant Wellness with personalized Fullscript supplements for optimal digestive and immune health.",
         "url": "https://imbtherapies.com",
-        "telephone": "+1-XXX-XXX-XXXX",
+        "telephone": "+1-480-442-2858",
+        "email": "imbtherapies@gmail.com",
         "address": {
           "@type": "PostalAddress",
+          "addressLocality": "Phoenix",
+          "addressRegion": "AZ",
           "addressCountry": "US"
         },
         "medicalSpecialty": "Digestive Health",
@@ -224,6 +229,34 @@ export default function RootLayout({
               }
             }
           ]
+        }
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://imbtherapies.com/#localbusiness",
+        "name": "IMB Therapies",
+        "image": "https://imbtherapies.com/images/imbt_logo.png",
+        "telephone": "+1-480-442-2858",
+        "email": "imbtherapies@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Phoenix",
+          "addressRegion": "AZ",
+          "addressCountry": "US"
+        },
+        "url": "https://imbtherapies.com",
+        "priceRange": "$$",
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "17:00"
         }
       }
     ]

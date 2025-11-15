@@ -27,6 +27,35 @@ export const metadata: Metadata = {
 };
 
 export default function FullscriptSupplementsBlogPost() {
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How Fullscript Supplements Support Digestive Health",
+    "description": "Explore how Fullscript supplements can complement your Vibrant Wellness test results for optimal digestive health and personalized nutrition.",
+    "image": "https://imbtherapies.com/images/multi_probiotic.webp",
+    "datePublished": "2023-12-28",
+    "dateModified": "2023-12-28",
+    "author": {
+      "@type": "Organization",
+      "name": "IMB Therapies Team",
+      "url": "https://imbtherapies.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "IMB Therapies",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://imbtherapies.com/images/imbt_logo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://imbtherapies.com/blog/fullscript-supplements-digestive-health"
+    },
+    "articleSection": "Supplements",
+    "keywords": "Fullscript supplements, digestive health supplements, probiotic supplements"
+  };
+
   const post = {
     id: 'fullscript-supplements-digestive-health',
     title: 'How Fullscript Supplements Support Digestive Health',
@@ -301,6 +330,12 @@ export default function FullscriptSupplementsBlogPost() {
 
   return (
     <div className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleSchema),
+        }}
+      />
       <BlogNavigation />
       {/* Header */}
       <div className="py-20 mt-16" style={{ background: 'linear-gradient(135deg, #00436E 0%, #68B04D 100%)' }}>

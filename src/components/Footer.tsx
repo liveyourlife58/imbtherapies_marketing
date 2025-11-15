@@ -9,28 +9,16 @@ const Footer = () => {
 
   const footerLinks = {
     company: [
-      { name: 'About Us', href: '#about' },
-      { name: 'Our Team', href: '#team' },
-      { name: 'Careers', href: '#careers' },
-      { name: 'Press', href: '#press' }
+      { name: 'About Us', href: '/#about' },
+      { name: 'Our Team', href: '/#team' }
     ],
     services: [
-      { name: 'Digestive Testing', href: '#testing' },
-      { name: 'Food Sensitivity', href: '#food-sensitivity' },
-      { name: 'Supplements', href: '#supplements' },
-      { name: 'Health Coaching', href: '#coaching' }
+      { name: 'Digestive Testing', href: '/#testing' },
+      { name: 'Supplements', href: '/#fullscript-supplements' },
+      { name: 'Health Coaching', href: '/#coaching' }
     ],
     support: [
-      { name: 'Help Center', href: '#help' },
-      { name: 'Contact Us', href: '#contact' },
-      { name: 'Shipping Info', href: '#shipping' },
-      { name: 'Returns', href: '#returns' }
-    ],
-    legal: [
-      { name: 'Privacy Policy', href: '#privacy' },
-      { name: 'Terms of Service', href: '#terms' },
-      { name: 'HIPAA Notice', href: '#hipaa' },
-      { name: 'Medical Disclaimer', href: '#disclaimer' }
+      { name: 'Contact Us', href: '/#contact' }
     ]
   };
 
@@ -80,22 +68,22 @@ const Footer = () => {
               <div className="space-y-3">
                 <div className="flex items-center" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
                   <Mail className="w-4 h-4 mr-3" style={{ color: '#68B04D' }} />
-                  <span>support@imbtherapies.com</span>
+                  <span>imbtherapies@gmail.com</span>
                 </div>
                 <div className="flex items-center" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
                   <Phone className="w-4 h-4 mr-3" style={{ color: '#68B04D' }} />
-                  <span>1-800-IMB-HEALTH</span>
+                  <span>(480) 442-2858</span>
                 </div>
                 <div className="flex items-center" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
                   <MapPin className="w-4 h-4 mr-3" style={{ color: '#68B04D' }} />
-                  <span>San Francisco, CA</span>
+                  <span>Phoenix, AZ</span>
                 </div>
               </div>
             </motion.div>
           </div>
 
           {/* Footer Links */}
-          <div className="lg:col-span-3 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="lg:col-span-3 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {Object.entries(footerLinks).map(([category, links], index) => (
               <motion.div
                 key={category}
@@ -128,40 +116,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Newsletter Signup */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="rounded-2xl p-8 mb-12"
-          style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)' }}
-        >
-          <div className="max-w-2xl mx-auto text-center">
-            <h3 className="text-2xl font-bold mb-4">
-              Stay Updated with Health Tips
-            </h3>
-            <p className="mb-6" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
-              Get the latest insights on digestive health, nutrition, and wellness delivered to your inbox.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-1 px-4 py-3 rounded-full bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="text-white px-6 py-3 rounded-full font-semibold transition-colors duration-200"
-                style={{ backgroundColor: '#68B04D' }}
-              >
-                Subscribe
-              </motion.button>
-            </div>
-          </div>
-        </motion.div>
-
         {/* Bottom Footer */}
         <div className="border-t pt-8" style={{ borderColor: 'rgba(255, 255, 255, 0.2)' }}>
           <div className="flex flex-col lg:flex-row justify-between items-center">
@@ -173,7 +127,7 @@ const Footer = () => {
               className="text-sm mb-4 lg:mb-0"
               style={{ color: 'rgba(255, 255, 255, 0.6)' }}
             >
-              © {currentYear} IMB Therapies. All rights reserved.
+              © {currentYear} IMBTherapies. All rights reserved.
             </motion.div>
 
             {/* Social Links */}
@@ -182,7 +136,7 @@ const Footer = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
-              className="flex space-x-4"
+              className="flex space-x-4 hidden"
             >
               {socialLinks.map((social) => (
                 <motion.a

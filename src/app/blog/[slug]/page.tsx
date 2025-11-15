@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { Calendar, Clock, ArrowLeft, Share2 } from 'lucide-react';
 import BlogNavigation from '@/components/BlogNavigation';
 import Footer from '@/components/Footer';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import RelatedArticles from '@/components/RelatedArticles';
 
 // This would typically come from a CMS or database
 const blogPosts = {
@@ -355,12 +357,53 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     );
   }
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.title,
+    "description": post.excerpt,
+    "image": `https://imbtherapies.com${post.image}`,
+    "datePublished": post.date,
+    "dateModified": post.date,
+    "author": {
+      "@type": "Organization",
+      "name": post.author,
+      "url": "https://imbtherapies.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "IMB Therapies",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://imbtherapies.com/images/imbt_logo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://imbtherapies.com/blog/${post.id}`
+    },
+    "articleSection": post.category,
+    "keywords": post.category
+  };
+
   return (
     <div className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleSchema),
+        }}
+      />
       <BlogNavigation />
       {/* Header */}
       <div className="py-20 mt-16" style={{ background: 'linear-gradient(135deg, #00436E 0%, #68B04D 100%)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Breadcrumbs 
+            items={[
+              { label: 'Blog', href: '/blog' },
+              { label: post.title, href: `/blog/${post.id}` }
+            ]} 
+          />
           <Link
             href="/blog"
             className="inline-flex items-center gap-2 hover:text-white transition-colors duration-200 mb-6"
@@ -485,6 +528,21 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
           </div>
         </div>
       </div>
+
+      {/* Related Articles */}
+      <RelatedArticles
+        currentPostId={post.id}
+        articles={Object.values(blogPosts).map(p => ({
+          id: p.id,
+          title: p.title,
+          excerpt: p.excerpt,
+          date: p.date,
+          readTime: p.readTime,
+          image: p.image,
+          category: p.category
+        }))}
+      />
+
       <Footer />
     </div>
   );

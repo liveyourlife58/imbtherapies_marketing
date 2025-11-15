@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { Calendar, Clock, ArrowLeft, Share2 } from 'lucide-react';
 import BlogNavigation from '@/components/BlogNavigation';
 import Footer from '@/components/Footer';
+import Breadcrumbs from '@/components/Breadcrumbs';
+import RelatedArticles from '@/components/RelatedArticles';
 
 export const metadata: Metadata = {
   title: 'The Ultimate Guide to Gut Microbiome Health | IMB Therapies Blog',
@@ -27,6 +29,35 @@ export const metadata: Metadata = {
 };
 
 export default function GutMicrobiomeHealthGuideBlogPost() {
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "The Ultimate Guide to Gut Microbiome Health",
+    "description": "Learn how to optimize your gut microbiome for better digestive health, immunity, and overall wellness.",
+    "image": "https://imbtherapies.com/images/gut-health.webp",
+    "datePublished": "2024-01-01",
+    "dateModified": "2024-01-01",
+    "author": {
+      "@type": "Organization",
+      "name": "IMB Therapies Team",
+      "url": "https://imbtherapies.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "IMB Therapies",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://imbtherapies.com/images/imbt_logo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://imbtherapies.com/blog/gut-microbiome-health-guide"
+    },
+    "articleSection": "Digestive Health",
+    "keywords": "gut microbiome health, microbiome optimization, gut health guide"
+  };
+
   const post = {
     id: 'gut-microbiome-health-guide',
     title: 'The Ultimate Guide to Gut Microbiome Health',
@@ -300,10 +331,22 @@ export default function GutMicrobiomeHealthGuideBlogPost() {
 
   return (
     <div className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleSchema),
+        }}
+      />
       <BlogNavigation />
       {/* Header */}
       <div className="py-20 mt-16" style={{ background: 'linear-gradient(135deg, #00436E 0%, #68B04D 100%)' }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Breadcrumbs 
+            items={[
+              { label: 'Blog', href: '/blog' },
+              { label: post.title, href: `/blog/${post.id}` }
+            ]} 
+          />
           <Link
             href="/blog"
             className="inline-flex items-center gap-2 hover:text-white transition-colors duration-200 mb-6"
@@ -428,6 +471,59 @@ export default function GutMicrobiomeHealthGuideBlogPost() {
           </div>
         </div>
       </div>
+
+      {/* Related Articles */}
+      <RelatedArticles
+        currentPostId={post.id}
+        articles={[
+          {
+            id: 'vibrant-wellness-gut-zoomer-complete-guide',
+            title: 'Complete Guide to Vibrant Wellness Gut Zoomer Test',
+            excerpt: 'Everything you need to know about the Vibrant Wellness Gut Zoomer test, including what it tests, how to prepare, and understanding your results.',
+            date: '2024-01-15',
+            readTime: '8 min read',
+            image: '/images/gut_zoomer.png',
+            category: 'Vibrant Wellness Tests'
+          },
+          {
+            id: 'wheat-zoomer-gluten-sensitivity-testing',
+            title: 'Understanding Gluten Sensitivity with Vibrant Wellness Wheat Zoomer',
+            excerpt: 'Learn how the Vibrant Wellness Wheat Zoomer test can help identify gluten-related issues and guide your dietary choices.',
+            date: '2024-01-10',
+            readTime: '6 min read',
+            image: '/images/wheat_zoomer.png',
+            category: 'Vibrant Wellness Tests'
+          },
+          {
+            id: 'food-sensitivity-complete-200-foods',
+            title: 'Food Sensitivity Complete: Testing 200+ Foods for Hidden Sensitivities',
+            excerpt: 'Discover how the Vibrant Wellness Food Sensitivity Complete test can reveal hidden food sensitivities affecting your health.',
+            date: '2024-01-05',
+            readTime: '7 min read',
+            image: '/images/food_sensitivity_complete.png',
+            category: 'Vibrant Wellness Tests'
+          },
+          {
+            id: 'fullscript-supplements-digestive-health',
+            title: 'How Fullscript Supplements Support Digestive Health',
+            excerpt: 'Explore how Fullscript supplements can complement your Vibrant Wellness test results for optimal digestive health.',
+            date: '2023-12-28',
+            readTime: '5 min read',
+            image: '/images/multi_probiotic.webp',
+            category: 'Supplements'
+          },
+          {
+            id: 'gut-microbiome-health-guide',
+            title: 'The Ultimate Guide to Gut Microbiome Health',
+            excerpt: 'Learn how to optimize your gut microbiome for better digestive health, immunity, and overall wellness.',
+            date: '2024-01-01',
+            readTime: '10 min read',
+            image: '/images/gut-health.webp',
+            category: 'Digestive Health'
+          }
+        ]}
+      />
+
       <Footer />
     </div>
   );

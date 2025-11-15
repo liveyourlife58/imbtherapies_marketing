@@ -130,14 +130,15 @@ const HeroSection = () => {
               >
                 Order Your Test Kit
               </motion.a>
-              <motion.button
+              <motion.a
+                href="#blog"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-white px-8 py-4 rounded-full font-semibold text-lg transition-colors duration-200 border-2 shadow-lg"
+                className="bg-white px-8 py-4 rounded-full font-semibold text-lg transition-colors duration-200 border-2 shadow-lg inline-block text-center"
                 style={{ color: '#00436E', borderColor: '#00436E' }}
               >
                 Learn More
-              </motion.button>
+              </motion.a>
             </motion.div>
           </motion.div>
 
@@ -146,60 +147,78 @@ const HeroSection = () => {
              initial={{ opacity: 0, x: 50 }}
              animate={{ opacity: 1, x: 0 }}
              transition={{ duration: 0.8, delay: 0.2 }}
-             className="relative"
+             className="relative m-0 p-0"
            >
-             <div className="relative">
+             <div className="relative m-0 p-0">
                {/* Results Images Display */}
                <motion.div
                  initial={{ opacity: 0, scale: 0.8 }}
                  animate={{ opacity: 1, scale: 1 }}
                  transition={{ duration: 0.8, delay: 1.0 }}
-                 className="relative w-full h-[500px] flex gap-0 mb-0 mt-0"
+                 className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] flex gap-0 mb-16 sm:mb-20 md:mb-24 lg:mb-0 mt-0 pt-0 overflow-visible"
                >
                  {/* Sample Report */}
-                 <div className="relative w-1/2 h-full">
+                 <div className="relative w-1/2 h-full flex items-start justify-center -mt-8">
                    <Image
                      src="/images/SampleReport.webp"
                      alt="Sample Test Report"
                      fill
-                     className="object-cover scale-85"
+                     className="object-contain scale-110"
                      style={{ transform: 'rotate(-10deg)' }}
-                     sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 25vw"
+                     sizes="(max-width: 640px) 50vw, (max-width: 768px) 50vw, (max-width: 1200px) 25vw, 25vw"
                    />
                  </div>
                  
                  {/* Complete Markers List */}
-                 <div className="relative w-1/2 h-full">
+                 <div className="relative w-1/2 h-full flex items-start justify-center -mt-8">
                    <Image
                      src="/images/CompleteMarkersList.webp"
                      alt="Complete Markers List"
                      fill
-                     className="object-cover scale-85"
+                     className="object-contain scale-110"
                      style={{ transform: 'rotate(10deg)' }}
-                     sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 25vw"
+                     sizes="(max-width: 640px) 50vw, (max-width: 768px) 50vw, (max-width: 1200px) 25vw, 25vw"
                    />
+                 </div>
+
+                 {/* Test Images - Inline */}
+                 <div className="absolute bottom-0 sm:bottom-0 md:bottom-0 lg:-bottom-20 left-1/2 transform -translate-x-1/2 flex gap-2 sm:gap-3 md:gap-4 z-10">
+                   {/* Gut Zoomer */}
+                   <div className="relative w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48">
+                     <Image
+                       src="/images/gut_zoomer.png"
+                       alt="Gut Zoomer Test"
+                       fill
+                       className="object-cover scale-85"
+                       sizes="(max-width: 640px) 96px, (max-width: 768px) 128px, 192px"
+                     />
+                   </div>
+
+                   {/* Wheat Zoomer */}
+                   <div className="relative w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48">
+                     <Image
+                       src="/images/wheat_zoomer.png"
+                       alt="Wheat Zoomer Test"
+                       fill
+                       className="object-cover scale-85"
+                       sizes="(max-width: 640px) 96px, (max-width: 768px) 128px, 192px"
+                     />
+                   </div>
+
+                   {/* Food Sensitivity Complete */}
+                   <div className="relative w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48">
+                     <Image
+                       src="/images/food_sensitivity_complete.png"
+                       alt="Food Sensitivity Complete Test"
+                       fill
+                       className="object-cover scale-85"
+                       sizes="(max-width: 640px) 96px, (max-width: 768px) 128px, 192px"
+                     />
+                   </div>
                  </div>
                </motion.div>
 
 
-               {/* Floating Elements */}
-               <motion.div
-                 animate={{ y: [0, -10, 0] }}
-                 transition={{ duration: 3, repeat: Infinity }}
-                 className="absolute top-16 -right-4 text-white rounded-full p-3 shadow-lg"
-                 style={{ backgroundColor: '#68B04D' }}
-               >
-                 <CheckCircle className="w-6 h-6" />
-               </motion.div>
-
-               <motion.div
-                 animate={{ y: [0, 10, 0] }}
-                 transition={{ duration: 3, repeat: Infinity, delay: 1.5 }}
-                 className="absolute text-white rounded-full p-3 shadow-lg"
-                 style={{ backgroundColor: '#00436E', bottom: '50px', left: '9px' }}
-               >
-                 <TestTube className="w-6 h-6" />
-               </motion.div>
              </div>
            </motion.div>
         </div>

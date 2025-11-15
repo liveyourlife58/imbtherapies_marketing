@@ -164,7 +164,109 @@ const TestsSection = () => {
             </motion.a>
           </div>
         </motion.div>
+
+        {/* FAQ Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="mt-20"
+        >
+          <h3 className="text-3xl font-bold text-center mb-12" style={{ color: '#00436E' }}>
+            Frequently Asked Questions
+          </h3>
+          <div className="max-w-4xl mx-auto space-y-6">
+            {[
+              {
+                question: 'How accurate are Vibrant Wellness tests?',
+                answer: 'Vibrant Wellness uses CLIA-certified laboratories and FDA-approved testing methods to ensure the highest accuracy. Their tests are trusted by healthcare providers worldwide and meet the highest industry standards for reliability.'
+              },
+              {
+                question: 'How long does it take to get results?',
+                answer: 'Most Vibrant Wellness tests provide results within 5-7 business days after the lab receives your sample. You\'ll receive a detailed report with comprehensive analysis and personalized recommendations.'
+              },
+              {
+                question: 'Do I need a doctor\'s order to take these tests?',
+                answer: 'No, you can order Vibrant Wellness tests directly through IMBTherapies without a doctor\'s prescription. However, we recommend consulting with a healthcare provider to interpret your results and create a personalized treatment plan.'
+              },
+              {
+                question: 'What makes Vibrant Wellness tests different from other at-home tests?',
+                answer: 'Vibrant Wellness tests are among the most comprehensive available, using advanced technology to analyze hundreds of markers. They\'re used by healthcare professionals and provide detailed, actionable insights that go beyond basic screening.'
+              },
+              {
+                question: 'Can I use my insurance to pay for these tests?',
+                answer: 'Vibrant Wellness tests are typically not covered by insurance, but we offer competitive pricing and no consultation fees. Many patients find the investment worthwhile for the comprehensive insights and personalized recommendations.'
+              }
+            ].map((faq, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-xl p-6 shadow-md border-2"
+                style={{ borderColor: 'rgba(0, 67, 110, 0.1)' }}
+              >
+                <h4 className="text-lg font-bold mb-3" style={{ color: '#00436E' }}>
+                  {faq.question}
+                </h4>
+                <p className="text-gray-600 leading-relaxed">
+                  {faq.answer}
+                </p>
+              </div>
+            ))}
+          </div>
+        </motion.div>
       </div>
+
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How accurate are Vibrant Wellness tests?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Vibrant Wellness uses CLIA-certified laboratories and FDA-approved testing methods to ensure the highest accuracy. Their tests are trusted by healthcare providers worldwide and meet the highest industry standards for reliability."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long does it take to get results?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Most Vibrant Wellness tests provide results within 5-7 business days after the lab receives your sample. You'll receive a detailed report with comprehensive analysis and personalized recommendations."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I need a doctor's order to take these tests?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No, you can order Vibrant Wellness tests directly through IMBTherapies without a doctor's prescription. However, we recommend consulting with a healthcare provider to interpret your results and create a personalized treatment plan."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What makes Vibrant Wellness tests different from other at-home tests?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Vibrant Wellness tests are among the most comprehensive available, using advanced technology to analyze hundreds of markers. They're used by healthcare professionals and provide detailed, actionable insights that go beyond basic screening."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I use my insurance to pay for these tests?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Vibrant Wellness tests are typically not covered by insurance, but we offer competitive pricing and no consultation fees. Many patients find the investment worthwhile for the comprehensive insights and personalized recommendations."
+                }
+              }
+            ]
+          }),
+        }}
+      />
     </section>
   );
 };

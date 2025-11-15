@@ -27,6 +27,35 @@ export const metadata: Metadata = {
 };
 
 export default function WheatZoomerBlogPost() {
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Understanding Gluten Sensitivity with Vibrant Wellness Wheat Zoomer",
+    "description": "Learn how the Vibrant Wellness Wheat Zoomer test can help identify gluten-related issues and guide your dietary choices.",
+    "image": "https://imbtherapies.com/images/wheat_zoomer.png",
+    "datePublished": "2024-01-10",
+    "dateModified": "2024-01-10",
+    "author": {
+      "@type": "Organization",
+      "name": "IMB Therapies Team",
+      "url": "https://imbtherapies.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "IMB Therapies",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://imbtherapies.com/images/imbt_logo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://imbtherapies.com/blog/wheat-zoomer-gluten-sensitivity-testing"
+    },
+    "articleSection": "Vibrant Wellness Tests",
+    "keywords": "Wheat Zoomer, gluten sensitivity, wheat sensitivity testing"
+  };
+
   const post = {
     id: 'wheat-zoomer-gluten-sensitivity-testing',
     title: 'Understanding Gluten Sensitivity with Vibrant Wellness Wheat Zoomer',
@@ -307,6 +336,12 @@ export default function WheatZoomerBlogPost() {
 
   return (
     <div className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleSchema),
+        }}
+      />
       <BlogNavigation />
       {/* Header */}
       <div className="py-20 mt-16" style={{ background: 'linear-gradient(135deg, #00436E 0%, #68B04D 100%)' }}>

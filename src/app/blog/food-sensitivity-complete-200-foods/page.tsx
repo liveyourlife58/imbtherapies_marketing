@@ -27,6 +27,35 @@ export const metadata: Metadata = {
 };
 
 export default function FoodSensitivityCompleteBlogPost() {
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Food Sensitivity Complete: Testing 200+ Foods for Hidden Sensitivities",
+    "description": "Discover how the Vibrant Wellness Food Sensitivity Complete test analyzes your body's reaction to over 200 foods to identify hidden sensitivities.",
+    "image": "https://imbtherapies.com/images/food_sensitivity_complete.png",
+    "datePublished": "2024-01-05",
+    "dateModified": "2024-01-05",
+    "author": {
+      "@type": "Organization",
+      "name": "IMB Therapies Team",
+      "url": "https://imbtherapies.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "IMB Therapies",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://imbtherapies.com/images/imbt_logo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://imbtherapies.com/blog/food-sensitivity-complete-200-foods"
+    },
+    "articleSection": "Vibrant Wellness Tests",
+    "keywords": "Food Sensitivity Complete, food sensitivity testing, food intolerance test"
+  };
+
   const post = {
     id: 'food-sensitivity-complete-200-foods',
     title: 'Food Sensitivity Complete: Testing 200+ Foods for Hidden Sensitivities',
@@ -337,6 +366,12 @@ export default function FoodSensitivityCompleteBlogPost() {
 
   return (
     <div className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleSchema),
+        }}
+      />
       <BlogNavigation />
       {/* Header */}
       <div className="py-20 mt-16" style={{ background: 'linear-gradient(135deg, #00436E 0%, #68B04D 100%)' }}>
